@@ -1,0 +1,10 @@
+---
+- hosts: base.local
+  vars_files:
+  - ~/repos/toolbox/playbook/lxc/lxc-init.yml
+  tasks: 
+  - name: Run a command in a container and then restart it
+    lxc_container:
+      name: "{{ item.vm }}"
+      state: stopped
+    with_items: "{{ vms }}"

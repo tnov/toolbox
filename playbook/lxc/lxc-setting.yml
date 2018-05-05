@@ -1,0 +1,17 @@
+---
+- hosts: base.local
+  vars_files:
+  - ~/repos/toolbox/playbook/lxc/lxc-init.yml
+  tasks: 
+  - name: "apt update"
+    shell: lxc-attach -n {{ item.vm }} -- su -c "apt-get update"
+    with_items: "{{ vms }}"
+  - name: "inatall avahi-daemon"
+    shell: lxc-attach -n {{ item.vm }} -- su -c "apt-get install -y avahi-daemon"
+    with_items: "{{ vms }}"
+  - name: "enable avahi-daemon"
+    shell: lxc-attach -n {{ item.vm }} -- su -c "systemctl enable avahi-daemon"
+    with_items: "{{ vms }}"
+  - name: "restart avahi-daemon"
+    shell: lxc-attach -n {{ item.vm }} -- su -c "systemctl restart avahi-daemon"
+    with_items: "{{ vms }}"

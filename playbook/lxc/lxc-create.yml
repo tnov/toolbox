@@ -1,0 +1,19 @@
+---
+- hosts: base.local
+#  become: yes
+  vars_files:
+  - ~/repos/toolbox/playbook/lxc/lxc-init.yml
+  tasks: 
+  - name: "create container"
+    lxc_container:
+#      name: test1
+      name: "{{ item.vm }}"
+      container_log: true
+#      lxc_path: /var/lib/lxc
+      template: download
+      template_options:
+        --dist {{ lxc_container_map_distro }}
+        --release {{ lxc_container_map_release }}
+        --arch {{ lxc_container_map_arch }}
+      state: started
+    with_items: "{{ vms }}"

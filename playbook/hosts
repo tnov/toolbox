@@ -1,0 +1,6 @@
+[default]
+base.local ansible_ssh_port=22 ansible_ssh_user=debian ansible_ssh_pass=debian ansible_sudo_pass=debian
+[client]
+test1.local ansible_ssh_port=22 ansible_ssh_user=root ansible_ssh_pass=debian
+#ansible_sudo_pass=XXXXXXX
+

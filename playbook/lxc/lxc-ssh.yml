@@ -1,0 +1,23 @@
+---
+- hosts: base.local
+  vars_files:
+  - ~/repos/toolbox/playbook/lxc/lxc-init.yml
+  tasks: 
+  - name: "apt update"
+    shell: lxc-attach -n {{ item.vm }} -- su -c "apt-get update"
+    with_items: "{{ vms }}"
+  - name: "inatall sshd"
+    shell: lxc-attach -n {{ item.vm }} -- su -c "apt-get install -y ssh"
+    with_items: "{{ vms }}"
+  - name: "set param sshd_config"
+    shell: lxc-attach -n {{ item.vm }} -- su -c 'echo -e "PermitRootLogin yes\nPasswordAuthentication yes\nPermitEmptyPasswords no" >> /etc/ssh/sshd_config'
+    with_items: "{{ vms }}"
+  - name: "set root password"
+    shell: lxc-attach -n {{ item.vm }} -- su -c 'echo -e "root:debian" | chpasswd'
+    with_items: "{{ vms }}"
+  - name: "enable sshd"
+    shell: lxc-attach -n {{ item.vm }} -- su -c "systemctl enable ssh.service"
+    with_items: "{{ vms }}"
+  - name: "restart sshd"
+    shell: lxc-attach -n {{ item.vm }} -- su -c "systemctl restart ssh.service"
+    with_items: "{{ vms }}"

@@ -1,0 +1,5 @@
+lxc_container_map_distro: debian
+lxc_container_map_release: stretch
+lxc_container_map_arch: amd64
+vms:
+    - { vm: test1 }
