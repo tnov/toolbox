@@ -74,4 +74,6 @@ export LANGUAGE=en_US.UTF-8 && export LANG=en_US.UTF-8 && export LC_ALL=en_US.UT
     with_items: "{{ vms }}"
 
     shell: lxc-attach -n {{ item.vm }} -- su -c 'echo "StrictHostKeyChecking no\nPermitRootLogin yes\nPasswordAuthentication yes\nPermitEmptyPasswords no" >> /etc/ssh/sshd_config'
-    
+
+git add --all
+git push

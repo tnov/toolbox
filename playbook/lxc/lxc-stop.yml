@@ -3,7 +3,7 @@
   vars_files:
   - ~/repos/toolbox/playbook/lxc/lxc-init.yml
   tasks: 
-  - name: Run a command in a container and then restart it
+  - name: stop container
     lxc_container:
       name: "{{ item.vm }}"
       state: stopped
