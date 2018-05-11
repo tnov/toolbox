@@ -1,0 +1,12 @@
+---
+- hosts: base.local
+#  become: yes
+  vars_files:
+  - ~/repos/toolbox/playbook/letsproxy/letsproxy-init.yml
+  tasks: 
+  - name: "configure static network"
+    shell: lxc-attach -n {{ item.vm }} -- su -c 'echo -e "# This file describes the network interfaces available on your system\n# and how to activate them. For more information, see interfaces(5).\n# The loopback network interface\nauto lo\niface lo inet loopback\n\nauto eth0\niface eth0 inet static\n    address {{ item.ip }}\n    netmask {{ item.netmask }}\n    gateway {{ item.gateway }}" > /etc/network/interfaces'
+    with_items: "{{ vms }}"
+  - name: "restart network interfaces"
+    shell: lxc-attach -n {{ item.vm }} -- su -c "systemctl restart networking.service && ifdown eth0 && ifup eth0"
+    with_items: "{{ vms }}"

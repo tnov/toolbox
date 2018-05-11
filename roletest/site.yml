@@ -1,0 +1,9 @@
+#
+# site.yml
+#
+- name: site.yml
+  hosts: all
+  become: yes
+  remote_user: "{{ ansible_remote_user_name }}"
+  roles:
+    - apache2

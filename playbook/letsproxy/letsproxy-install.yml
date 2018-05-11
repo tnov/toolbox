@@ -1,0 +1,25 @@
+---
+- hosts: web
+#  become: yes
+  vars_files:
+  - ~/repos/toolbox/playbook/letsproxy/letsproxy-init.yml
+  tasks: 
+  - name: "apt update"
+    shell: apt-get update
+  - name: "inatall nginx"
+    shell: apt-get install -y nginx python-certbot-nginx && systemctl stop nginx.service
+  - name: "set param sshd_config"
+    shell: echo -e "PermitRootLogin yes\nPasswordAuthentication yes\nPermitEmptyPasswords no" >> /etc/ssh/sshd_config
+  - name: "set param sshd_config"
+    shell: echo -e "PermitRootLogin yes\nPasswordAuthentication yes\nPermitEmptyPasswords no" >> /etc/ssh/sshd_config
+  - name: "certbot installer nginx"
+    shell: certbot --authenticator webroot --installer nginx
+  - name: "certbot hook nginx"
+    shell: certbot certonly --authenticator standalone --pre-hook "nginx -s stop" --post-hook "nginx"
+  - name: "certbot renew"
+    shell: certbot renew --dry-run
+
+server {  listen 80;  server_name app.monoweb.info;  proxy_redirect off;  proxy_set_header Host $host;  proxy_set_header X-Real-IP $remote_addr;  proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;  location / {    root /home/mono/public_html/app.monoweb.info;    if (-f $request_filename) {      break;    }    proxy_pass http://localhost:9001;  }}
+
+server {  listen 80;  server_name app.monoweb.info;  proxy_redirect off;  proxy_set_header Host $host;  proxy_set_header X-Real-IP $remote_addr;  proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;  location / {    root /home/mono/public_html/app.monoweb.info;    if (-f $request_filename) {      break;    }    proxy_pass http://localhost:9001;  }}
+s

@@ -4,3 +4,4 @@ lxc_container_map_arch: amd64
 vms:
     - { vm: test1 }
     - { vm: test2 }
+    - { vm: test3 }

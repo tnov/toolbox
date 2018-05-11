@@ -1,0 +1,7 @@
+---
+- name: Install apache2(Centos).
+  yum: name=httpd
+  when: "ansible_os_family == 'Centos'"
+- name: Install
+  apt: name=apache2
+  when: "ansible_os_family == 'Debian'"

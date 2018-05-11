@@ -1,0 +1,6 @@
+vms:
+    - { vm: test1 , ip: 192.168.0.100 , netmask: 255.255.255.0 , gateway: 192.168.0.1}
+
+server_name: sightlight666.dip.jp
+vhosts:
+    - { location: /test2 , proxy_pass: http://test2.local }
