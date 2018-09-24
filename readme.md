@@ -11,8 +11,8 @@ lxc-attach -n test1 -- su -c 'echo -e "root:debian" | chpasswd'
 
 # login non root user
 sudo apt-get install -y git ansible avahi-daemon sshpass
-git config --global user.name tnov
-git config --global user.email sightlight999@gmail.com
+git config --global user.name XXXX
+git config --global user.email XXXXXXXXX@gmail.com
 
 mkdir ~/repos
 cd ~/repos
