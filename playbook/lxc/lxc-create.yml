@@ -2,8 +2,17 @@
 - hosts: base.local
 #  become: yes
   vars_files:
-  - ~/repos/toolbox/playbook/lxc/lxc-init.yml
+  - ~/repos/toolbox/playbook/lxc/lxc-target.yml
   tasks: 
+  - name: "create lxc dir"
+    file:
+      path: ~/.config/lxc
+      state: directory
+      mode: 0755
+  - name: "create lxc config file"
+    shell: cp -f /etc/lxc/default.conf ~/.config/lxc/default.conf
+  - name: "add lxc idmap"
+    shell: sh -c 'echo  "lxc.include = /etc/lxc/default.conf\nlxc.id_map = u 0 100000 65536\nlxc.id_map = g 0 100000 65536" >> ~/.config/lxc/default.conf'
   - name: "create container"
     lxc_container:
 #      name: test1

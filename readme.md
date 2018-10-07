@@ -10,6 +10,9 @@ StrictHostKeyChecking no
 lxc-attach -n test1 -- su -c 'echo -e "root:debian" | chpasswd'
 
 # login non root user
+sudo apt-get install -y software-properties-common
+sudo apt-add-repository ppa:ansible/ansible
+sudo apt-get update
 sudo apt-get install -y git ansible avahi-daemon sshpass
 git config --global user.name XXXX
 git config --global user.email XXXXXXXXX@gmail.com
