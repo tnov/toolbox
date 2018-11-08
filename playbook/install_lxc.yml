@@ -18,21 +18,21 @@
         - bridge-utils
   - name: "down bridge"
     become: yes
-    shell: ip link set br0 down
+    shell: ip link set lxcbr0 down
     failed_when: False
   - name: "delete bridge"
     become: yes
-    shell: brctl delbr br0
+    shell: brctl delbr lxcbr0
     failed_when: False
   - name: "create bridge"
     become: yes
-    shell: brctl addbr br0
+    shell: brctl addbr lxcbr0
   - name: "setting bridge"
     become: yes
-    shell: sh -c 'echo "auto br0\niface br0 inet dhcp\n      bridge_ports enp2s0f2\n      bridge_stp off\n      bridge_maxwait 0" >> /etc/network/interfaces'
+    shell: sh -c 'echo "auto lxcbr0\niface lxcbr0 inet dhcp\n      bridge_ports enp0s3\n      bridge_stp off\n      bridge_maxwait 0" >> /etc/network/interfaces'
   - name: "Restart service networking"
     become: yes
-    shell: sleep 2s && systemctl restart networking.service &
+    shell: sleep 5s && systemctl restart networking.service &
   - name: wait for SSH
     become: yes
     wait_for_connection:
@@ -43,10 +43,13 @@
 #      state: restarted
   - name: "setting lxc-default configuration"
     become: yes
-    shell: sh -c 'echo "#lxc.network.type = empty\n# architecture configuration\nlxc.arch = arm64\n# Network configuration\nlxc.network.type = veth\nlxc.network.flags = up\nlxc.network.link = br0\nlxc.network.hwaddr = 00:FF:AA:xx:xx:xx" > /etc/lxc/default.conf'
+    shell: sh -c 'echo "#lxc.network.type = empty\n# architecture configuration\nlxc.arch = amd64\n# Network configuration\nlxc.network.type = veth\nlxc.network.flags = up\nlxc.network.link = lxcbr0\nlxc.network.hwaddr = 00:FF:AA:xx:xx:xx" > /etc/lxc/default.conf'
   - name: "setting lxc-net configuration"
     become: yes
     shell: sh -c 'echo USE_LXC_BRIDGE=\"true\" > /etc/default/lxc-net'
+  - name: "setting lxc-usernet configuration"
+    become:yes
+    shell: sh -c 'echo debian veth lxcbr0 10 > /etc/lxc/lxc-usernet'
   - name: "lxc.id_map u"
     become: yes
     shell: usermod --add-subuids 100000-165536 $USER

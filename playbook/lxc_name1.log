@@ -1,0 +1,244 @@
+      lxc-start 20181104031630.710 INFO     lxc_start_ui - tools/lxc_start.c:main:275 - using rcfile /home/debian/.local/share/lxc/test1/config
+      lxc-start 20181104031630.712 WARN     lxc_confile - confile.c:config_pivotdir:1910 - lxc.pivotdir is ignored.  It will soon become an error.
+      lxc-start 20181104031630.715 INFO     lxc_confile - confile.c:config_idmap:1531 - read uid map: type u nsid 0 hostid 100000 range 65536
+      lxc-start 20181104031630.715 INFO     lxc_confile - confile.c:config_idmap:1531 - read uid map: type g nsid 0 hostid 100000 range 65536
+      lxc-start 20181104031630.719 DEBUG    lxc_monitor - monitor.c:lxc_monitord_spawn:309 - Going to wait for pid 17274.
+      lxc-start 20181104031630.722 DEBUG    lxc_monitor - monitor.c:lxc_monitord_spawn:328 - Trying to sync with child process.
+      lxc-start 20181104031630.724 INFO     lxc_start - start.c:lxc_check_inherited:235 - Closed inherited fd: 4.
+      lxc-start 20181104031630.724 DEBUG    lxc_monitor - monitor.c:lxc_monitord_spawn:366 - Using pipe file descriptor 5 for monitord.
+      lxc-start 20181104031630.762 DEBUG    lxc_monitor - monitor.c:lxc_monitord_spawn:343 - Sucessfully synced with child process.
+      lxc-start 20181104031630.766 DEBUG    lxc_monitor - monitor.c:lxc_monitord_spawn:312 - Finished waiting on pid 17274.
+      lxc-start 20181104031630.770 INFO     lxc_container - lxccontainer.c:do_lxcapi_start:804 - Attempting to set proc title to [lxc monitor] /home/debian/.local/share/lxc test1
+      lxc-start 20181104031630.776 DEBUG    lxc_monitor - monitor.c:lxc_monitord_spawn:309 - Going to wait for pid 17278.
+      lxc-start 20181104031630.778 DEBUG    lxc_monitor - monitor.c:lxc_monitord_spawn:328 - Trying to sync with child process.
+      lxc-start 20181104031630.780 INFO     lxc_lsm - lsm/lsm.c:lsm_init:48 - LSM security driver nop
+      lxc-start 20181104031630.782 INFO     lxc_seccomp - seccomp.c:parse_config_v2:402 - processing: .reject_force_umount  # comment this to allow umount -f;  not recommended.
+      lxc-start 20181104031630.782 INFO     lxc_seccomp - seccomp.c:parse_config_v2:567 - Adding native rule for reject_force_umount action 0.
+      lxc-start 20181104031630.782 INFO     lxc_seccomp - seccomp.c:do_resolve_add_rule:251 - Setting Seccomp rule to reject force umounts.
+      lxc-start 20181104031630.782 INFO     lxc_seccomp - seccomp.c:parse_config_v2:570 - Adding compat rule for reject_force_umount action 0.
+      lxc-start 20181104031630.782 INFO     lxc_seccomp - seccomp.c:do_resolve_add_rule:251 - Setting Seccomp rule to reject force umounts.
+      lxc-start 20181104031630.782 INFO     lxc_seccomp - seccomp.c:parse_config_v2:402 - processing: .[all].
+      lxc-start 20181104031630.782 INFO     lxc_seccomp - seccomp.c:parse_config_v2:402 - processing: .kexec_load errno 1.
+      lxc-start 20181104031630.782 INFO     lxc_seccomp - seccomp.c:parse_config_v2:567 - Adding native rule for kexec_load action 327681.
+      lxc-start 20181104031630.783 INFO     lxc_seccomp - seccomp.c:parse_config_v2:570 - Adding compat rule for kexec_load action 327681.
+      lxc-start 20181104031630.783 INFO     lxc_seccomp - seccomp.c:parse_config_v2:402 - processing: .open_by_handle_at errno 1.
+      lxc-start 20181104031630.783 INFO     lxc_seccomp - seccomp.c:parse_config_v2:567 - Adding native rule for open_by_handle_at action 327681.
+      lxc-start 20181104031630.783 INFO     lxc_seccomp - seccomp.c:parse_config_v2:570 - Adding compat rule for open_by_handle_at action 327681.
+      lxc-start 20181104031630.783 INFO     lxc_seccomp - seccomp.c:parse_config_v2:402 - processing: .init_module errno 1.
+      lxc-start 20181104031630.783 INFO     lxc_seccomp - seccomp.c:parse_config_v2:567 - Adding native rule for init_module action 327681.
+      lxc-start 20181104031630.783 INFO     lxc_seccomp - seccomp.c:parse_config_v2:570 - Adding compat rule for init_module action 327681.
+      lxc-start 20181104031630.783 INFO     lxc_seccomp - seccomp.c:parse_config_v2:402 - processing: .finit_module errno 1.
+      lxc-start 20181104031630.783 INFO     lxc_seccomp - seccomp.c:parse_config_v2:567 - Adding native rule for finit_module action 327681.
+      lxc-start 20181104031630.783 INFO     lxc_seccomp - seccomp.c:parse_config_v2:570 - Adding compat rule for finit_module action 327681.
+      lxc-start 20181104031630.784 INFO     lxc_seccomp - seccomp.c:parse_config_v2:402 - processing: .delete_module errno 1.
+      lxc-start 20181104031630.784 INFO     lxc_seccomp - seccomp.c:parse_config_v2:567 - Adding native rule for delete_module action 327681.
+      lxc-start 20181104031630.784 INFO     lxc_seccomp - seccomp.c:parse_config_v2:570 - Adding compat rule for delete_module action 327681.
+      lxc-start 20181104031630.784 INFO     lxc_seccomp - seccomp.c:parse_config_v2:580 - Merging in the compat Seccomp ctx into the main one.
+      lxc-start 20181104031630.785 DEBUG    lxc_start - start.c:setup_signal_fd:273 - Set SIGCHLD handler with file descriptor: 5.
+      lxc-start 20181104031630.791 DEBUG    console - console.c:lxc_console_peer_default:468 - no console peer
+      lxc-start 20181104031630.794 INFO     lxc_start - start.c:lxc_check_inherited:235 - Closed inherited fd: 4.
+      lxc-start 20181104031630.794 DEBUG    lxc_monitor - monitor.c:lxc_monitord_spawn:366 - Using pipe file descriptor 5 for monitord.
+      lxc-start 20181104031630.868 DEBUG    lxc_monitor - monitor.c:lxc_monitord_spawn:343 - Sucessfully synced with child process.
+      lxc-start 20181104031630.872 DEBUG    lxc_monitor - monitor.c:lxc_monitord_spawn:312 - Finished waiting on pid 17278.
+      lxc-start 20181104031630.872 INFO     lxc_monitor - monitor.c:lxc_monitor_sock_name:185 - Using monitor socket name "lxc/f231561acbca176f//home/debian/.local/share/lxc".
+      lxc-start 20181104031630.933 INFO     lxc_start - start.c:lxc_init:475 - Container "test1" is initialized.
+      lxc-start 20181104031630.937 DEBUG    lxc_start - start.c:__lxc_start:1317 - Not dropping CAP_SYS_BOOT or watching utmp.
+      lxc-start 20181104031630.937 INFO     lxc_cgroup - cgroups/cgroup.c:cgroup_init:68 - cgroup driver cgroupfs-ng initing for test1
+      lxc-start 20181104031630.942 INFO     lxc_start - start.c:lxc_spawn:1154 - Cloned CLONE_NEWUSER.
+      lxc-start 20181104031630.942 INFO     lxc_start - start.c:lxc_spawn:1154 - Cloned CLONE_NEWNS.
+      lxc-start 20181104031630.942 INFO     lxc_start - start.c:lxc_spawn:1154 - Cloned CLONE_NEWPID.
+      lxc-start 20181104031630.942 INFO     lxc_start - start.c:lxc_spawn:1154 - Cloned CLONE_NEWUTS.
+      lxc-start 20181104031630.942 INFO     lxc_start - start.c:lxc_spawn:1154 - Cloned CLONE_NEWIPC.
+      lxc-start 20181104031630.986 INFO     lxc_start - start.c:do_start:745 - Unshared CLONE_NEWNET.
+      lxc-start 20181104031630.133 NOTICE   lxc_utils - utils.c:lxc_switch_uid_gid:2064 - Switched to gid 0.
+      lxc-start 20181104031630.133 NOTICE   lxc_utils - utils.c:lxc_switch_uid_gid:2070 - Switched to uid 0.
+      lxc-start 20181104031630.133 NOTICE   lxc_utils - utils.c:lxc_setgroups:2082 - Dropped additional groups.
+      lxc-start 20181104031630.133 DEBUG    lxc_conf - conf.c:setup_rootfs:1273 - mounted '/home/debian/.local/share/lxc/test1/rootfs' on '/usr/lib/x86_64-linux-gnu/lxc/rootfs'
+      lxc-start 20181104031630.133 INFO     lxc_conf - conf.c:setup_utsname:901 - 'test1' hostname has been setup
+      lxc-start 20181104031630.133 DEBUG    lxc_conf - conf.c:setup_hw_addr:2225 - mac address '00:FF:AA:96:93:ac' on 'eth0' has been setup
+      lxc-start 20181104031630.133 DEBUG    lxc_conf - conf.c:setup_netdev:2452 - 'eth0' has been setup
+      lxc-start 20181104031630.133 DEBUG    lxc_conf - conf.c:setup_hw_addr:2225 - mac address '00:FF:AA:c3:82:c3' on 'eth1' has been setup
+      lxc-start 20181104031630.134 DEBUG    lxc_conf - conf.c:setup_netdev:2452 - 'eth1' has been setup
+      lxc-start 20181104031630.134 INFO     lxc_conf - conf.c:setup_network:2473 - network has been setup
+      lxc-start 20181104031630.134 INFO     lxc_conf - conf.c:mount_autodev:1130 - Mounting container /dev
+      lxc-start 20181104031630.134 INFO     lxc_conf - conf.c:mount_autodev:1153 - Mounted tmpfs onto /usr/lib/x86_64-linux-gnu/lxc/rootfs/dev
+      lxc-start 20181104031630.134 INFO     lxc_conf - conf.c:mount_autodev:1171 - Mounted container /dev
+      lxc-start 20181104031630.134 DEBUG    lxc_conf - conf.c:mount_entry:1715 - remounting /sys/fs/fuse/connections on /usr/lib/x86_64-linux-gnu/lxc/rootfs/sys/fs/fuse/connections to respect bind or remount options
+      lxc-start 20181104031630.134 DEBUG    lxc_conf - conf.c:mount_entry:1730 - (at remount) flags for /sys/fs/fuse/connections was 4096, required extra flags are 0
+      lxc-start 20181104031630.134 DEBUG    lxc_conf - conf.c:mount_entry:1739 - mountflags already was 4096, skipping remount
+      lxc-start 20181104031630.134 DEBUG    lxc_conf - conf.c:mount_entry:1765 - mounted '/sys/fs/fuse/connections' on '/usr/lib/x86_64-linux-gnu/lxc/rootfs/sys/fs/fuse/connections', type 'none'
+      lxc-start 20181104031630.134 DEBUG    lxc_conf - conf.c:mount_entry:1715 - remounting /dev/console on /usr/lib/x86_64-linux-gnu/lxc/rootfs/dev/console to respect bind or remount options
+      lxc-start 20181104031630.134 DEBUG    lxc_conf - conf.c:mount_entry:1730 - (at remount) flags for /dev/console was 4098, required extra flags are 2
+      lxc-start 20181104031630.134 DEBUG    lxc_conf - conf.c:mount_entry:1765 - mounted '/dev/console' on '/usr/lib/x86_64-linux-gnu/lxc/rootfs/dev/console', type 'none'
+      lxc-start 20181104031630.134 DEBUG    lxc_conf - conf.c:mount_entry:1715 - remounting /dev/full on /usr/lib/x86_64-linux-gnu/lxc/rootfs/dev/full to respect bind or remount options
+      lxc-start 20181104031630.134 DEBUG    lxc_conf - conf.c:mount_entry:1730 - (at remount) flags for /dev/full was 4098, required extra flags are 2
+      lxc-start 20181104031630.134 DEBUG    lxc_conf - conf.c:mount_entry:1765 - mounted '/dev/full' on '/usr/lib/x86_64-linux-gnu/lxc/rootfs/dev/full', type 'none'
+      lxc-start 20181104031630.134 DEBUG    lxc_conf - conf.c:mount_entry:1715 - remounting /dev/null on /usr/lib/x86_64-linux-gnu/lxc/rootfs/dev/null to respect bind or remount options
+      lxc-start 20181104031630.134 DEBUG    lxc_conf - conf.c:mount_entry:1730 - (at remount) flags for /dev/null was 4098, required extra flags are 2
+      lxc-start 20181104031630.134 DEBUG    lxc_conf - conf.c:mount_entry:1765 - mounted '/dev/null' on '/usr/lib/x86_64-linux-gnu/lxc/rootfs/dev/null', type 'none'
+      lxc-start 20181104031630.134 DEBUG    lxc_conf - conf.c:mount_entry:1715 - remounting /dev/random on /usr/lib/x86_64-linux-gnu/lxc/rootfs/dev/random to respect bind or remount options
+      lxc-start 20181104031630.134 DEBUG    lxc_conf - conf.c:mount_entry:1730 - (at remount) flags for /dev/random was 4098, required extra flags are 2
+      lxc-start 20181104031630.134 DEBUG    lxc_conf - conf.c:mount_entry:1765 - mounted '/dev/random' on '/usr/lib/x86_64-linux-gnu/lxc/rootfs/dev/random', type 'none'
+      lxc-start 20181104031630.135 DEBUG    lxc_conf - conf.c:mount_entry:1715 - remounting /dev/tty on /usr/lib/x86_64-linux-gnu/lxc/rootfs/dev/tty to respect bind or remount options
+      lxc-start 20181104031630.135 DEBUG    lxc_conf - conf.c:mount_entry:1730 - (at remount) flags for /dev/tty was 4098, required extra flags are 2
+      lxc-start 20181104031630.135 DEBUG    lxc_conf - conf.c:mount_entry:1765 - mounted '/dev/tty' on '/usr/lib/x86_64-linux-gnu/lxc/rootfs/dev/tty', type 'none'
+      lxc-start 20181104031630.135 DEBUG    lxc_conf - conf.c:mount_entry:1715 - remounting /dev/urandom on /usr/lib/x86_64-linux-gnu/lxc/rootfs/dev/urandom to respect bind or remount options
+      lxc-start 20181104031630.135 DEBUG    lxc_conf - conf.c:mount_entry:1730 - (at remount) flags for /dev/urandom was 4098, required extra flags are 2
+      lxc-start 20181104031630.135 DEBUG    lxc_conf - conf.c:mount_entry:1765 - mounted '/dev/urandom' on '/usr/lib/x86_64-linux-gnu/lxc/rootfs/dev/urandom', type 'none'
+      lxc-start 20181104031630.135 DEBUG    lxc_conf - conf.c:mount_entry:1715 - remounting /dev/zero on /usr/lib/x86_64-linux-gnu/lxc/rootfs/dev/zero to respect bind or remount options
+      lxc-start 20181104031630.135 DEBUG    lxc_conf - conf.c:mount_entry:1730 - (at remount) flags for /dev/zero was 4098, required extra flags are 2
+      lxc-start 20181104031630.135 DEBUG    lxc_conf - conf.c:mount_entry:1765 - mounted '/dev/zero' on '/usr/lib/x86_64-linux-gnu/lxc/rootfs/dev/zero', type 'none'
+      lxc-start 20181104031630.135 INFO     lxc_conf - conf.c:mount_file_entries:1985 - mount points have been setup
+      lxc-start 20181104031630.135 INFO     lxc_conf - conf.c:run_script_argv:424 - Executing script "/usr/share/lxcfs/lxc.mount.hook" for container "test1", config section "lxc".
+      lxc-start 20181104031630.175 INFO     lxc_conf - conf.c:fill_autodev:1199 - Creating initial consoles under container /dev
+      lxc-start 20181104031630.175 INFO     lxc_conf - conf.c:fill_autodev:1210 - Populating container /dev
+      lxc-start 20181104031630.175 INFO     lxc_conf - conf.c:fill_autodev:1247 - Populated container /dev
+      lxc-start 20181104031630.175 INFO     lxc_conf - conf.c:setup_dev_console:1495 - console has been setup
+      lxc-start 20181104031630.175 INFO     lxc_utils - utils.c:mount_proc_if_needed:1785 - I am 1, /proc/self points to '1'
+      lxc-start 20181104031630.175 DEBUG    lxc_conf - conf.c:setup_rootfs_pivot_root:1108 - pivot_root syscall to '/usr/lib/x86_64-linux-gnu/lxc/rootfs' successful
+      lxc-start 20181104031630.175 DEBUG    lxc_conf - conf.c:lxc_create_tty:3429 - allocated pty '/dev/pts/0' (9/12)
+      lxc-start 20181104031630.175 DEBUG    lxc_conf - conf.c:lxc_create_tty:3429 - allocated pty '/dev/pts/1' (14/15)
+      lxc-start 20181104031630.175 DEBUG    lxc_conf - conf.c:lxc_create_tty:3429 - allocated pty '/dev/pts/2' (16/17)
+      lxc-start 20181104031630.176 DEBUG    lxc_conf - conf.c:lxc_create_tty:3429 - allocated pty '/dev/pts/3' (18/19)
+      lxc-start 20181104031630.176 INFO     lxc_conf - conf.c:lxc_create_tty:3440 - tty's configured
+      lxc-start 20181104031630.177 INFO     lxc_conf - conf.c:setup_tty:1053 - 4 tty(s) has been setup
+      lxc-start 20181104031630.177 INFO     lxc_conf - conf.c:setup_personality:1451 - set personality to '0x0'
+      lxc-start 20181104031630.177 DEBUG    lxc_conf - conf.c:setup_caps:2135 - drop capability 'mac_admin' (33)
+      lxc-start 20181104031630.177 DEBUG    lxc_conf - conf.c:setup_caps:2135 - drop capability 'mac_override' (32)
+      lxc-start 20181104031630.177 DEBUG    lxc_conf - conf.c:setup_caps:2135 - drop capability 'sys_time' (25)
+      lxc-start 20181104031630.177 DEBUG    lxc_conf - conf.c:setup_caps:2135 - drop capability 'sys_module' (16)
+      lxc-start 20181104031630.177 DEBUG    lxc_conf - conf.c:setup_caps:2135 - drop capability 'sys_rawio' (17)
+      lxc-start 20181104031630.177 DEBUG    lxc_conf - conf.c:setup_caps:2144 - capabilities have been setup
+      lxc-start 20181104031630.177 NOTICE   lxc_conf - conf.c:lxc_setup:3977 - 'test1' is setup.
+      lxc-start 20181104031630.177 INFO     lxc_start - start.c:do_start:836 - Unshared CLONE_NEWCGROUP.
+      lxc-start 20181104031630.177 NOTICE   lxc_start - start.c:start:1428 - Exec'ing "/sbin/init".
+      lxc-start 20181104031630.183 ERROR    lxc_start - start.c:start:1431 - Exec format error - Failed to exec "/sbin/init".
+      lxc-start 20181104031630.183 ERROR    lxc_sync - sync.c:__sync_wait:57 - An error occurred in another process (expected sequence number 5)
+      lxc-start 20181104031630.184 ERROR    lxc_start - start.c:__lxc_start:1346 - Failed to spawn container "test1".
+      lxc-start 20181104031630.184 INFO     lxc_conf - conf.c:run_script_argv:424 - Executing script "/usr/share/lxcfs/lxc.reboot.hook" for container "test1", config section "lxc".
+      lxc-start 20181104031630.689 WARN     lxc_commands - commands.c:lxc_cmd_rsp_recv:172 - Command get_cgroup failed to receive response: Connection reset by peer.
+      lxc-start 20181104031635.696 ERROR    lxc_start_ui - tools/lxc_start.c:main:366 - The container failed to start.
+      lxc-start 20181104031635.698 ERROR    lxc_start_ui - tools/lxc_start.c:main:368 - To get more details, run the container in foreground mode.
+      lxc-start 20181104031635.701 ERROR    lxc_start_ui - tools/lxc_start.c:main:370 - Additional information can be obtained by setting the --logfile and --logpriority options.
+      lxc-start 20181104032549.407 INFO     lxc_start_ui - tools/lxc_start.c:main:275 - using rcfile /home/debian/.local/share/lxc/test1/config
+      lxc-start 20181104032549.407 WARN     lxc_confile - confile.c:config_pivotdir:1910 - lxc.pivotdir is ignored.  It will soon become an error.
+      lxc-start 20181104032549.407 INFO     lxc_confile - confile.c:config_idmap:1531 - read uid map: type u nsid 0 hostid 100000 range 65536
+      lxc-start 20181104032549.407 INFO     lxc_confile - confile.c:config_idmap:1531 - read uid map: type g nsid 0 hostid 100000 range 65536
+      lxc-start 20181104032549.407 DEBUG    lxc_monitor - monitor.c:lxc_monitord_spawn:309 - Going to wait for pid 17657.
+      lxc-start 20181104032549.408 DEBUG    lxc_monitor - monitor.c:lxc_monitord_spawn:328 - Trying to sync with child process.
+      lxc-start 20181104032549.408 INFO     lxc_start - start.c:lxc_check_inherited:235 - Closed inherited fd: 4.
+      lxc-start 20181104032549.408 DEBUG    lxc_monitor - monitor.c:lxc_monitord_spawn:366 - Using pipe file descriptor 5 for monitord.
+      lxc-start 20181104032549.411 DEBUG    lxc_monitor - monitor.c:lxc_monitord_spawn:343 - Sucessfully synced with child process.
+      lxc-start 20181104032549.412 DEBUG    lxc_monitor - monitor.c:lxc_monitord_spawn:312 - Finished waiting on pid 17657.
+      lxc-start 20181104032549.412 INFO     lxc_container - lxccontainer.c:do_lxcapi_start:804 - Attempting to set proc title to [lxc monitor] /home/debian/.local/share/lxc test1
+      lxc-start 20181104032549.413 DEBUG    lxc_monitor - monitor.c:lxc_monitord_spawn:309 - Going to wait for pid 17661.
+      lxc-start 20181104032549.413 DEBUG    lxc_monitor - monitor.c:lxc_monitord_spawn:328 - Trying to sync with child process.
+      lxc-start 20181104032549.413 INFO     lxc_lsm - lsm/lsm.c:lsm_init:48 - LSM security driver nop
+      lxc-start 20181104032549.413 INFO     lxc_seccomp - seccomp.c:parse_config_v2:402 - processing: .reject_force_umount  # comment this to allow umount -f;  not recommended.
+      lxc-start 20181104032549.413 INFO     lxc_seccomp - seccomp.c:parse_config_v2:567 - Adding native rule for reject_force_umount action 0.
+      lxc-start 20181104032549.413 INFO     lxc_seccomp - seccomp.c:do_resolve_add_rule:251 - Setting Seccomp rule to reject force umounts.
+      lxc-start 20181104032549.413 INFO     lxc_seccomp - seccomp.c:parse_config_v2:570 - Adding compat rule for reject_force_umount action 0.
+      lxc-start 20181104032549.413 INFO     lxc_seccomp - seccomp.c:do_resolve_add_rule:251 - Setting Seccomp rule to reject force umounts.
+      lxc-start 20181104032549.413 INFO     lxc_seccomp - seccomp.c:parse_config_v2:402 - processing: .[all].
+      lxc-start 20181104032549.413 INFO     lxc_seccomp - seccomp.c:parse_config_v2:402 - processing: .kexec_load errno 1.
+      lxc-start 20181104032549.413 INFO     lxc_seccomp - seccomp.c:parse_config_v2:567 - Adding native rule for kexec_load action 327681.
+      lxc-start 20181104032549.413 INFO     lxc_seccomp - seccomp.c:parse_config_v2:570 - Adding compat rule for kexec_load action 327681.
+      lxc-start 20181104032549.413 INFO     lxc_seccomp - seccomp.c:parse_config_v2:402 - processing: .open_by_handle_at errno 1.
+      lxc-start 20181104032549.413 INFO     lxc_seccomp - seccomp.c:parse_config_v2:567 - Adding native rule for open_by_handle_at action 327681.
+      lxc-start 20181104032549.413 INFO     lxc_seccomp - seccomp.c:parse_config_v2:570 - Adding compat rule for open_by_handle_at action 327681.
+      lxc-start 20181104032549.413 INFO     lxc_seccomp - seccomp.c:parse_config_v2:402 - processing: .init_module errno 1.
+      lxc-start 20181104032549.413 INFO     lxc_seccomp - seccomp.c:parse_config_v2:567 - Adding native rule for init_module action 327681.
+      lxc-start 20181104032549.413 INFO     lxc_seccomp - seccomp.c:parse_config_v2:570 - Adding compat rule for init_module action 327681.
+      lxc-start 20181104032549.413 INFO     lxc_seccomp - seccomp.c:parse_config_v2:402 - processing: .finit_module errno 1.
+      lxc-start 20181104032549.413 INFO     lxc_seccomp - seccomp.c:parse_config_v2:567 - Adding native rule for finit_module action 327681.
+      lxc-start 20181104032549.413 INFO     lxc_seccomp - seccomp.c:parse_config_v2:570 - Adding compat rule for finit_module action 327681.
+      lxc-start 20181104032549.413 INFO     lxc_seccomp - seccomp.c:parse_config_v2:402 - processing: .delete_module errno 1.
+      lxc-start 20181104032549.413 INFO     lxc_seccomp - seccomp.c:parse_config_v2:567 - Adding native rule for delete_module action 327681.
+      lxc-start 20181104032549.413 INFO     lxc_seccomp - seccomp.c:parse_config_v2:570 - Adding compat rule for delete_module action 327681.
+      lxc-start 20181104032549.413 INFO     lxc_seccomp - seccomp.c:parse_config_v2:580 - Merging in the compat Seccomp ctx into the main one.
+      lxc-start 20181104032549.414 DEBUG    lxc_start - start.c:setup_signal_fd:273 - Set SIGCHLD handler with file descriptor: 5.
+      lxc-start 20181104032549.414 DEBUG    console - console.c:lxc_console_peer_default:468 - no console peer
+      lxc-start 20181104032549.415 INFO     lxc_start - start.c:lxc_check_inherited:235 - Closed inherited fd: 4.
+      lxc-start 20181104032549.415 DEBUG    lxc_monitor - monitor.c:lxc_monitord_spawn:366 - Using pipe file descriptor 5 for monitord.
+      lxc-start 20181104032549.422 DEBUG    lxc_monitor - monitor.c:lxc_monitord_spawn:343 - Sucessfully synced with child process.
+      lxc-start 20181104032549.423 DEBUG    lxc_monitor - monitor.c:lxc_monitord_spawn:312 - Finished waiting on pid 17661.
+      lxc-start 20181104032549.423 INFO     lxc_monitor - monitor.c:lxc_monitor_sock_name:185 - Using monitor socket name "lxc/f231561acbca176f//home/debian/.local/share/lxc".
+      lxc-start 20181104032549.429 INFO     lxc_start - start.c:lxc_init:475 - Container "test1" is initialized.
+      lxc-start 20181104032549.429 DEBUG    lxc_start - start.c:__lxc_start:1317 - Not dropping CAP_SYS_BOOT or watching utmp.
+      lxc-start 20181104032549.429 INFO     lxc_cgroup - cgroups/cgroup.c:cgroup_init:68 - cgroup driver cgroupfs-ng initing for test1
+      lxc-start 20181104032549.430 INFO     lxc_start - start.c:lxc_spawn:1154 - Cloned CLONE_NEWUSER.
+      lxc-start 20181104032549.430 INFO     lxc_start - start.c:lxc_spawn:1154 - Cloned CLONE_NEWNS.
+      lxc-start 20181104032549.430 INFO     lxc_start - start.c:lxc_spawn:1154 - Cloned CLONE_NEWPID.
+      lxc-start 20181104032549.430 INFO     lxc_start - start.c:lxc_spawn:1154 - Cloned CLONE_NEWUTS.
+      lxc-start 20181104032549.430 INFO     lxc_start - start.c:lxc_spawn:1154 - Cloned CLONE_NEWIPC.
+      lxc-start 20181104032549.434 INFO     lxc_start - start.c:do_start:745 - Unshared CLONE_NEWNET.
+      lxc-start 20181104032549.474 NOTICE   lxc_utils - utils.c:lxc_switch_uid_gid:2064 - Switched to gid 0.
+      lxc-start 20181104032549.474 NOTICE   lxc_utils - utils.c:lxc_switch_uid_gid:2070 - Switched to uid 0.
+      lxc-start 20181104032549.474 NOTICE   lxc_utils - utils.c:lxc_setgroups:2082 - Dropped additional groups.
+      lxc-start 20181104032549.474 DEBUG    lxc_conf - conf.c:setup_rootfs:1273 - mounted '/home/debian/.local/share/lxc/test1/rootfs' on '/usr/lib/x86_64-linux-gnu/lxc/rootfs'
+      lxc-start 20181104032549.474 INFO     lxc_conf - conf.c:setup_utsname:901 - 'test1' hostname has been setup
+      lxc-start 20181104032549.474 DEBUG    lxc_conf - conf.c:setup_hw_addr:2225 - mac address '00:FF:AA:8a:6a:53' on 'eth0' has been setup
+      lxc-start 20181104032549.474 DEBUG    lxc_conf - conf.c:setup_netdev:2452 - 'eth0' has been setup
+      lxc-start 20181104032549.474 DEBUG    lxc_conf - conf.c:setup_hw_addr:2225 - mac address '00:FF:AA:c3:82:c3' on 'eth1' has been setup
+      lxc-start 20181104032549.474 DEBUG    lxc_conf - conf.c:setup_netdev:2452 - 'eth1' has been setup
+      lxc-start 20181104032549.474 INFO     lxc_conf - conf.c:setup_network:2473 - network has been setup
+      lxc-start 20181104032549.474 INFO     lxc_conf - conf.c:mount_autodev:1130 - Mounting container /dev
+      lxc-start 20181104032549.475 INFO     lxc_conf - conf.c:mount_autodev:1153 - Mounted tmpfs onto /usr/lib/x86_64-linux-gnu/lxc/rootfs/dev
+      lxc-start 20181104032549.475 INFO     lxc_conf - conf.c:mount_autodev:1171 - Mounted container /dev
+      lxc-start 20181104032549.475 DEBUG    lxc_conf - conf.c:mount_entry:1715 - remounting /sys/fs/fuse/connections on /usr/lib/x86_64-linux-gnu/lxc/rootfs/sys/fs/fuse/connections to respect bind or remount options
+      lxc-start 20181104032549.475 DEBUG    lxc_conf - conf.c:mount_entry:1730 - (at remount) flags for /sys/fs/fuse/connections was 4096, required extra flags are 0
+      lxc-start 20181104032549.475 DEBUG    lxc_conf - conf.c:mount_entry:1739 - mountflags already was 4096, skipping remount
+      lxc-start 20181104032549.475 DEBUG    lxc_conf - conf.c:mount_entry:1765 - mounted '/sys/fs/fuse/connections' on '/usr/lib/x86_64-linux-gnu/lxc/rootfs/sys/fs/fuse/connections', type 'none'
+      lxc-start 20181104032549.475 DEBUG    lxc_conf - conf.c:mount_entry:1715 - remounting /dev/console on /usr/lib/x86_64-linux-gnu/lxc/rootfs/dev/console to respect bind or remount options
+      lxc-start 20181104032549.475 DEBUG    lxc_conf - conf.c:mount_entry:1730 - (at remount) flags for /dev/console was 4098, required extra flags are 2
+      lxc-start 20181104032549.475 DEBUG    lxc_conf - conf.c:mount_entry:1765 - mounted '/dev/console' on '/usr/lib/x86_64-linux-gnu/lxc/rootfs/dev/console', type 'none'
+      lxc-start 20181104032549.475 DEBUG    lxc_conf - conf.c:mount_entry:1715 - remounting /dev/full on /usr/lib/x86_64-linux-gnu/lxc/rootfs/dev/full to respect bind or remount options
+      lxc-start 20181104032549.475 DEBUG    lxc_conf - conf.c:mount_entry:1730 - (at remount) flags for /dev/full was 4098, required extra flags are 2
+      lxc-start 20181104032549.475 DEBUG    lxc_conf - conf.c:mount_entry:1765 - mounted '/dev/full' on '/usr/lib/x86_64-linux-gnu/lxc/rootfs/dev/full', type 'none'
+      lxc-start 20181104032549.475 DEBUG    lxc_conf - conf.c:mount_entry:1715 - remounting /dev/null on /usr/lib/x86_64-linux-gnu/lxc/rootfs/dev/null to respect bind or remount options
+      lxc-start 20181104032549.475 DEBUG    lxc_conf - conf.c:mount_entry:1730 - (at remount) flags for /dev/null was 4098, required extra flags are 2
+      lxc-start 20181104032549.475 DEBUG    lxc_conf - conf.c:mount_entry:1765 - mounted '/dev/null' on '/usr/lib/x86_64-linux-gnu/lxc/rootfs/dev/null', type 'none'
+      lxc-start 20181104032549.475 DEBUG    lxc_conf - conf.c:mount_entry:1715 - remounting /dev/random on /usr/lib/x86_64-linux-gnu/lxc/rootfs/dev/random to respect bind or remount options
+      lxc-start 20181104032549.475 DEBUG    lxc_conf - conf.c:mount_entry:1730 - (at remount) flags for /dev/random was 4098, required extra flags are 2
+      lxc-start 20181104032549.475 DEBUG    lxc_conf - conf.c:mount_entry:1765 - mounted '/dev/random' on '/usr/lib/x86_64-linux-gnu/lxc/rootfs/dev/random', type 'none'
+      lxc-start 20181104032549.475 DEBUG    lxc_conf - conf.c:mount_entry:1715 - remounting /dev/tty on /usr/lib/x86_64-linux-gnu/lxc/rootfs/dev/tty to respect bind or remount options
+      lxc-start 20181104032549.476 DEBUG    lxc_conf - conf.c:mount_entry:1730 - (at remount) flags for /dev/tty was 4098, required extra flags are 2
+      lxc-start 20181104032549.476 DEBUG    lxc_conf - conf.c:mount_entry:1765 - mounted '/dev/tty' on '/usr/lib/x86_64-linux-gnu/lxc/rootfs/dev/tty', type 'none'
+      lxc-start 20181104032549.476 DEBUG    lxc_conf - conf.c:mount_entry:1715 - remounting /dev/urandom on /usr/lib/x86_64-linux-gnu/lxc/rootfs/dev/urandom to respect bind or remount options
+      lxc-start 20181104032549.476 DEBUG    lxc_conf - conf.c:mount_entry:1730 - (at remount) flags for /dev/urandom was 4098, required extra flags are 2
+      lxc-start 20181104032549.476 DEBUG    lxc_conf - conf.c:mount_entry:1765 - mounted '/dev/urandom' on '/usr/lib/x86_64-linux-gnu/lxc/rootfs/dev/urandom', type 'none'
+      lxc-start 20181104032549.476 DEBUG    lxc_conf - conf.c:mount_entry:1715 - remounting /dev/zero on /usr/lib/x86_64-linux-gnu/lxc/rootfs/dev/zero to respect bind or remount options
+      lxc-start 20181104032549.476 DEBUG    lxc_conf - conf.c:mount_entry:1730 - (at remount) flags for /dev/zero was 4098, required extra flags are 2
+      lxc-start 20181104032549.476 DEBUG    lxc_conf - conf.c:mount_entry:1765 - mounted '/dev/zero' on '/usr/lib/x86_64-linux-gnu/lxc/rootfs/dev/zero', type 'none'
+      lxc-start 20181104032549.476 INFO     lxc_conf - conf.c:mount_file_entries:1985 - mount points have been setup
+      lxc-start 20181104032549.476 INFO     lxc_conf - conf.c:run_script_argv:424 - Executing script "/usr/share/lxcfs/lxc.mount.hook" for container "test1", config section "lxc".
+      lxc-start 20181104032549.512 INFO     lxc_conf - conf.c:fill_autodev:1199 - Creating initial consoles under container /dev
+      lxc-start 20181104032549.512 INFO     lxc_conf - conf.c:fill_autodev:1210 - Populating container /dev
+      lxc-start 20181104032549.512 INFO     lxc_conf - conf.c:fill_autodev:1247 - Populated container /dev
+      lxc-start 20181104032549.512 INFO     lxc_conf - conf.c:setup_dev_console:1495 - console has been setup
+      lxc-start 20181104032549.512 INFO     lxc_utils - utils.c:mount_proc_if_needed:1785 - I am 1, /proc/self points to '1'
+      lxc-start 20181104032549.512 DEBUG    lxc_conf - conf.c:setup_rootfs_pivot_root:1108 - pivot_root syscall to '/usr/lib/x86_64-linux-gnu/lxc/rootfs' successful
+      lxc-start 20181104032549.513 DEBUG    lxc_conf - conf.c:lxc_create_tty:3429 - allocated pty '/dev/pts/0' (9/12)
+      lxc-start 20181104032549.513 DEBUG    lxc_conf - conf.c:lxc_create_tty:3429 - allocated pty '/dev/pts/1' (14/15)
+      lxc-start 20181104032549.513 DEBUG    lxc_conf - conf.c:lxc_create_tty:3429 - allocated pty '/dev/pts/2' (16/17)
+      lxc-start 20181104032549.513 DEBUG    lxc_conf - conf.c:lxc_create_tty:3429 - allocated pty '/dev/pts/3' (18/19)
+      lxc-start 20181104032549.513 INFO     lxc_conf - conf.c:lxc_create_tty:3440 - tty's configured
+      lxc-start 20181104032549.516 INFO     lxc_conf - conf.c:setup_tty:1053 - 4 tty(s) has been setup
+      lxc-start 20181104032549.516 INFO     lxc_conf - conf.c:setup_personality:1451 - set personality to '0x0'
+      lxc-start 20181104032549.516 DEBUG    lxc_conf - conf.c:setup_caps:2135 - drop capability 'mac_admin' (33)
+      lxc-start 20181104032549.516 DEBUG    lxc_conf - conf.c:setup_caps:2135 - drop capability 'mac_override' (32)
+      lxc-start 20181104032549.516 DEBUG    lxc_conf - conf.c:setup_caps:2135 - drop capability 'sys_time' (25)
+      lxc-start 20181104032549.516 DEBUG    lxc_conf - conf.c:setup_caps:2135 - drop capability 'sys_module' (16)
+      lxc-start 20181104032549.516 DEBUG    lxc_conf - conf.c:setup_caps:2135 - drop capability 'sys_rawio' (17)
+      lxc-start 20181104032549.516 DEBUG    lxc_conf - conf.c:setup_caps:2144 - capabilities have been setup
+      lxc-start 20181104032549.516 NOTICE   lxc_conf - conf.c:lxc_setup:3977 - 'test1' is setup.
+      lxc-start 20181104032549.516 INFO     lxc_start - start.c:do_start:836 - Unshared CLONE_NEWCGROUP.
+      lxc-start 20181104032549.516 NOTICE   lxc_start - start.c:start:1428 - Exec'ing "/sbin/init".
+      lxc-start 20181104032549.520 ERROR    lxc_start - start.c:start:1431 - Exec format error - Failed to exec "/sbin/init".
+      lxc-start 20181104032549.520 ERROR    lxc_sync - sync.c:__sync_wait:57 - An error occurred in another process (expected sequence number 5)
+      lxc-start 20181104032549.520 ERROR    lxc_start - start.c:__lxc_start:1346 - Failed to spawn container "test1".
+      lxc-start 20181104032549.521 INFO     lxc_conf - conf.c:run_script_argv:424 - Executing script "/usr/share/lxcfs/lxc.reboot.hook" for container "test1", config section "lxc".
+      lxc-start 20181104032550.257 WARN     lxc_commands - commands.c:lxc_cmd_rsp_recv:172 - Command get_cgroup failed to receive response: Connection reset by peer.
+      lxc-start 20181104032555.310 ERROR    lxc_start_ui - tools/lxc_start.c:main:366 - The container failed to start.
+      lxc-start 20181104032555.323 ERROR    lxc_start_ui - tools/lxc_start.c:main:368 - To get more details, run the container in foreground mode.
+      lxc-start 20181104032555.335 ERROR    lxc_start_ui - tools/lxc_start.c:main:370 - Additional information can be obtained by setting the --logfile and --logpriority options.

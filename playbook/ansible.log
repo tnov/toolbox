@@ -1,0 +1,416 @@
+2018-10-13 17:08:35,349 p=1421 u=debian |  PLAY [base.local] **********************************************************************************
+2018-10-13 17:08:35,376 p=1421 u=debian |  TASK [Gathering Facts] *****************************************************************************
+2018-10-13 17:08:36,425 p=1421 u=debian |  ok: [127.0.0.1]
+2018-10-13 17:08:36,448 p=1421 u=debian |  TASK [install lxc] *********************************************************************************
+2018-10-13 17:09:10,098 p=1421 u=debian |  changed: [127.0.0.1]
+2018-10-13 17:09:10,120 p=1421 u=debian |  TASK [down bridge] *********************************************************************************
+2018-10-13 17:09:10,493 p=1421 u=debian |  changed: [127.0.0.1]
+2018-10-13 17:09:10,516 p=1421 u=debian |  TASK [delete bridge] *******************************************************************************
+2018-10-13 17:09:10,703 p=1421 u=debian |  changed: [127.0.0.1]
+2018-10-13 17:09:10,724 p=1421 u=debian |  TASK [create bridge] *******************************************************************************
+2018-10-13 17:09:10,920 p=1421 u=debian |  changed: [127.0.0.1]
+2018-10-13 17:09:10,942 p=1421 u=debian |  TASK [setting bridge] ******************************************************************************
+2018-10-13 17:09:11,117 p=1421 u=debian |  changed: [127.0.0.1]
+2018-10-13 17:09:11,140 p=1421 u=debian |  TASK [Restart service networking] ******************************************************************
+2018-10-13 17:09:12,313 p=1421 u=debian |  changed: [127.0.0.1]
+2018-10-13 17:09:12,339 p=1421 u=debian |  TASK [wait for SSH] ********************************************************************************
+2018-10-13 17:09:22,370 p=1421 u=debian |   [WARNING]: Reset is not implemented for this connection
+
+2018-10-13 17:09:22,696 p=1421 u=debian |  ok: [127.0.0.1]
+2018-10-13 17:09:22,720 p=1421 u=debian |  TASK [setting lxc-default configuration] ***********************************************************
+2018-10-13 17:09:22,894 p=1421 u=debian |  changed: [127.0.0.1]
+2018-10-13 17:09:22,917 p=1421 u=debian |  TASK [setting lxc-net configuration] ***************************************************************
+2018-10-13 17:09:23,092 p=1421 u=debian |  changed: [127.0.0.1]
+2018-10-13 17:09:23,115 p=1421 u=debian |  TASK [lxc.id_map u] ********************************************************************************
+2018-10-13 17:09:23,310 p=1421 u=debian |  changed: [127.0.0.1]
+2018-10-13 17:09:23,335 p=1421 u=debian |  TASK [lxc.id_map g] ********************************************************************************
+2018-10-13 17:09:23,527 p=1421 u=debian |  changed: [127.0.0.1]
+2018-10-13 17:09:23,550 p=1421 u=debian |  TASK [setting unprivilege user clone configuration] ************************************************
+2018-10-13 17:09:23,726 p=1421 u=debian |  changed: [127.0.0.1]
+2018-10-13 17:09:23,747 p=1421 u=debian |  TASK [setting unprivilege user clone configuration] ************************************************
+2018-10-13 17:09:23,926 p=1421 u=debian |  changed: [127.0.0.1]
+2018-10-13 17:09:23,932 p=1421 u=debian |  PLAY RECAP *****************************************************************************************
+2018-10-13 17:09:23,933 p=1421 u=debian |  127.0.0.1                  : ok=14   changed=12   unreachable=0    failed=0   
+2018-10-13 17:11:06,702 p=6937 u=debian |  PLAY [base.local] **********************************************************************************
+2018-10-13 17:11:06,717 p=6937 u=debian |  TASK [Gathering Facts] *****************************************************************************
+2018-10-13 17:11:07,494 p=6937 u=debian |  ok: [127.0.0.1]
+2018-10-13 17:11:07,517 p=6937 u=debian |  TASK [install lxc] *********************************************************************************
+2018-10-13 17:11:08,498 p=6937 u=debian |  ok: [127.0.0.1]
+2018-10-13 17:11:08,520 p=6937 u=debian |  TASK [down bridge] *********************************************************************************
+2018-10-13 17:11:08,879 p=6937 u=debian |  changed: [127.0.0.1]
+2018-10-13 17:11:08,900 p=6937 u=debian |  TASK [delete bridge] *******************************************************************************
+2018-10-13 17:11:09,088 p=6937 u=debian |  changed: [127.0.0.1]
+2018-10-13 17:11:09,109 p=6937 u=debian |  TASK [create bridge] *******************************************************************************
+2018-10-13 17:11:09,308 p=6937 u=debian |  changed: [127.0.0.1]
+2018-10-13 17:11:09,334 p=6937 u=debian |  TASK [setting bridge] ******************************************************************************
+2018-10-13 17:11:09,512 p=6937 u=debian |  changed: [127.0.0.1]
+2018-10-13 17:11:09,536 p=6937 u=debian |  TASK [Restart service networking] ******************************************************************
+2018-10-13 17:11:10,711 p=6937 u=debian |  changed: [127.0.0.1]
+2018-10-13 17:11:10,732 p=6937 u=debian |  TASK [wait for SSH] ********************************************************************************
+2018-10-13 17:11:20,763 p=6937 u=debian |   [WARNING]: Reset is not implemented for this connection
+
+2018-10-13 17:11:21,068 p=6937 u=debian |  ok: [127.0.0.1]
+2018-10-13 17:11:21,088 p=6937 u=debian |  TASK [setting lxc-default configuration] ***********************************************************
+2018-10-13 17:11:21,264 p=6937 u=debian |  changed: [127.0.0.1]
+2018-10-13 17:11:21,285 p=6937 u=debian |  TASK [setting lxc-net configuration] ***************************************************************
+2018-10-13 17:11:21,467 p=6937 u=debian |  changed: [127.0.0.1]
+2018-10-13 17:11:21,489 p=6937 u=debian |  TASK [lxc.id_map u] ********************************************************************************
+2018-10-13 17:11:21,672 p=6937 u=debian |  changed: [127.0.0.1]
+2018-10-13 17:11:21,693 p=6937 u=debian |  TASK [lxc.id_map g] ********************************************************************************
+2018-10-13 17:11:21,874 p=6937 u=debian |  changed: [127.0.0.1]
+2018-10-13 17:11:21,895 p=6937 u=debian |  TASK [setting unprivilege user clone configuration] ************************************************
+2018-10-13 17:11:22,074 p=6937 u=debian |  changed: [127.0.0.1]
+2018-10-13 17:11:22,096 p=6937 u=debian |  TASK [setting unprivilege user clone configuration] ************************************************
+2018-10-13 17:11:22,275 p=6937 u=debian |  changed: [127.0.0.1]
+2018-10-13 17:11:22,281 p=6937 u=debian |  PLAY RECAP *****************************************************************************************
+2018-10-13 17:11:22,284 p=6937 u=debian |  127.0.0.1                  : ok=14   changed=11   unreachable=0    failed=0   
+2018-10-13 17:14:45,446 p=7676 u=debian |  PLAY [base.local] **********************************************************************************
+2018-10-13 17:14:45,462 p=7676 u=debian |  TASK [Gathering Facts] *****************************************************************************
+2018-10-13 17:14:46,254 p=7676 u=debian |  ok: [127.0.0.1]
+2018-10-13 17:14:46,278 p=7676 u=debian |  TASK [create lxc dir] ******************************************************************************
+2018-10-13 17:14:46,653 p=7676 u=debian |  changed: [127.0.0.1]
+2018-10-13 17:14:46,677 p=7676 u=debian |  TASK [create lxc config file] **********************************************************************
+2018-10-13 17:14:47,028 p=7676 u=debian |  changed: [127.0.0.1]
+2018-10-13 17:14:47,052 p=7676 u=debian |  TASK [add lxc idmap] *******************************************************************************
+2018-10-13 17:14:47,220 p=7676 u=debian |  changed: [127.0.0.1]
+2018-10-13 17:14:47,243 p=7676 u=debian |  TASK [create container] ****************************************************************************
+2018-10-13 17:22:09,850 p=7676 u=debian |  failed: [127.0.0.1] (item={u'vm': u'test1'}) => {"changed": false, "error": "Failed to start container [ test1 ]", "item": {"vm": "test1"}, "lxc_container": {"init_pid": -1, "interfaces": [], "ips": [], "name": "test1", "state": "stopped"}, "msg": "The container [ test1 ] failed to start. Check to lxc is available and that the container is in a functional state.", "rc": 1}
+2018-10-13 17:27:01,679 p=7676 u=debian |   [ERROR]: User interrupted execution
+
+2018-10-14 07:21:15,312 p=10682 u=debian |  PLAY [base.local] **********************************************************************************
+2018-10-14 07:21:15,328 p=10682 u=debian |  TASK [Gathering Facts] *****************************************************************************
+2018-10-14 07:21:16,169 p=10682 u=debian |  ok: [127.0.0.1]
+2018-10-14 07:21:16,194 p=10682 u=debian |  TASK [stop container and destroy] ******************************************************************
+2018-10-14 07:21:16,602 p=10682 u=debian |  ok: [127.0.0.1] => (item={u'vm': u'test1'})
+2018-10-14 07:21:16,756 p=10682 u=debian |  ok: [127.0.0.1] => (item={u'vm': u'test2'})
+2018-10-14 07:21:16,968 p=10682 u=debian |  failed: [127.0.0.1] (item={u'vm': u'test3'}) => {"changed": false, "command": "/usr/bin/lxc-create --name test3 --quiet --template ubuntu --bdev dir", "err": "", "item": {"vm": "test3"}, "msg": "Failed executing lxc-create.", "rc": 1}
+2018-10-14 07:21:16,975 p=10682 u=debian |  	to retry, use: --limit @/home/debian/repos/toolbox/playbook/lxc/lxc-destroy.retry
+
+2018-10-14 07:21:16,978 p=10682 u=debian |  PLAY RECAP *****************************************************************************************
+2018-10-14 07:21:16,979 p=10682 u=debian |  127.0.0.1                  : ok=1    changed=0    unreachable=0    failed=1   
+2018-10-14 07:22:08,629 p=10874 u=debian |  PLAY [base.local] **********************************************************************************
+2018-10-14 07:22:08,644 p=10874 u=debian |  TASK [Gathering Facts] *****************************************************************************
+2018-10-14 07:22:09,442 p=10874 u=debian |  ok: [127.0.0.1]
+2018-10-14 07:22:09,468 p=10874 u=debian |  TASK [create lxc dir] ******************************************************************************
+2018-10-14 07:22:09,841 p=10874 u=debian |  ok: [127.0.0.1]
+2018-10-14 07:22:09,868 p=10874 u=debian |  TASK [create lxc config file] **********************************************************************
+2018-10-14 07:22:10,222 p=10874 u=debian |  changed: [127.0.0.1]
+2018-10-14 07:22:10,247 p=10874 u=debian |  TASK [add lxc idmap] *******************************************************************************
+2018-10-14 07:22:10,414 p=10874 u=debian |  changed: [127.0.0.1]
+2018-10-14 07:22:10,437 p=10874 u=debian |  TASK [create container] ****************************************************************************
+2018-10-14 07:28:42,882 p=10874 u=debian |  failed: [127.0.0.1] (item={u'vm': u'test1'}) => {"changed": false, "error": "Failed to start container [ test1 ]", "item": {"vm": "test1"}, "lxc_container": {"init_pid": -1, "interfaces": [], "ips": [], "name": "test1", "state": "stopped"}, "msg": "The container [ test1 ] failed to start. Check to lxc is available and that the container is in a functional state.", "rc": 1}
+2018-10-14 07:35:15,071 p=10874 u=debian |  failed: [127.0.0.1] (item={u'vm': u'test2'}) => {"changed": false, "error": "Failed to start container [ test2 ]", "item": {"vm": "test2"}, "lxc_container": {"init_pid": -1, "interfaces": [], "ips": [], "name": "test2", "state": "stopped"}, "msg": "The container [ test2 ] failed to start. Check to lxc is available and that the container is in a functional state.", "rc": 1}
+2018-10-14 07:41:57,491 p=10874 u=debian |  failed: [127.0.0.1] (item={u'vm': u'test3'}) => {"changed": false, "error": "Failed to start container [ test3 ]", "item": {"vm": "test3"}, "lxc_container": {"init_pid": -1, "interfaces": [], "ips": [], "name": "test3", "state": "stopped"}, "msg": "The container [ test3 ] failed to start. Check to lxc is available and that the container is in a functional state.", "rc": 1}
+2018-10-14 07:41:57,495 p=10874 u=debian |  	to retry, use: --limit @/home/debian/repos/toolbox/playbook/lxc/lxc-create.retry
+
+2018-10-14 07:41:57,498 p=10874 u=debian |  PLAY RECAP *****************************************************************************************
+2018-10-14 07:41:57,499 p=10874 u=debian |  127.0.0.1                  : ok=4    changed=2    unreachable=0    failed=1   
+2018-10-14 08:40:07,857 p=14474 u=debian |  ERROR! the playbook: lxc/lxc-destroy could not be found
+2018-10-14 08:40:14,960 p=14478 u=debian |  PLAY [base.local] *******************************************************************************************
+2018-10-14 08:40:14,973 p=14478 u=debian |  TASK [Gathering Facts] **************************************************************************************
+2018-10-14 08:40:15,765 p=14478 u=debian |  ok: [127.0.0.1]
+2018-10-14 08:40:15,788 p=14478 u=debian |  TASK [stop container and destroy] ***************************************************************************
+2018-10-14 08:40:16,197 p=14478 u=debian |  ok: [127.0.0.1] => (item={u'vm': u'test1'})
+2018-10-14 08:40:16,353 p=14478 u=debian |  ok: [127.0.0.1] => (item={u'vm': u'test2'})
+2018-10-14 08:40:16,513 p=14478 u=debian |  ok: [127.0.0.1] => (item={u'vm': u'test3'})
+2018-10-14 08:40:16,535 p=14478 u=debian |  TASK [Destroy a container] **********************************************************************************
+2018-10-14 08:40:18,051 p=14478 u=debian |  changed: [127.0.0.1] => (item={u'vm': u'test1'})
+2018-10-14 08:40:19,572 p=14478 u=debian |  changed: [127.0.0.1] => (item={u'vm': u'test2'})
+2018-10-14 08:40:21,081 p=14478 u=debian |  changed: [127.0.0.1] => (item={u'vm': u'test3'})
+2018-10-14 08:40:21,087 p=14478 u=debian |  PLAY RECAP **************************************************************************************************
+2018-10-14 08:40:21,088 p=14478 u=debian |  127.0.0.1                  : ok=3    changed=1    unreachable=0    failed=0   
+2018-10-14 08:41:56,023 p=14900 u=debian |  PLAY [base.local] *******************************************************************************************
+2018-10-14 08:41:56,036 p=14900 u=debian |  TASK [Gathering Facts] **************************************************************************************
+2018-10-14 08:41:56,817 p=14900 u=debian |  ok: [127.0.0.1]
+2018-10-14 08:41:56,841 p=14900 u=debian |  TASK [create lxc dir] ***************************************************************************************
+2018-10-14 08:41:57,208 p=14900 u=debian |  ok: [127.0.0.1]
+2018-10-14 08:41:57,230 p=14900 u=debian |  TASK [create lxc config file] *******************************************************************************
+2018-10-14 08:41:57,582 p=14900 u=debian |  changed: [127.0.0.1]
+2018-10-14 08:41:57,605 p=14900 u=debian |  TASK [add lxc idmap] ****************************************************************************************
+2018-10-14 08:41:57,773 p=14900 u=debian |  changed: [127.0.0.1]
+2018-10-14 08:41:57,796 p=14900 u=debian |  TASK [create container] *************************************************************************************
+2018-10-14 08:48:39,937 p=14900 u=debian |  failed: [127.0.0.1] (item={u'vm': u'test1'}) => {"changed": false, "error": "Failed to start container [ test1 ]", "item": {"vm": "test1"}, "lxc_container": {"init_pid": -1, "interfaces": [], "ips": [], "name": "test1", "state": "stopped"}, "msg": "The container [ test1 ] failed to start. Check to lxc is available and that the container is in a functional state.", "rc": 1}
+2018-10-14 08:55:21,615 p=14900 u=debian |   [ERROR]: User interrupted execution
+
+2018-10-27 03:19:25,098 p=935 u=debian |  PLAY [base.local] **********************************************************************************
+2018-10-27 03:19:25,118 p=935 u=debian |  TASK [Gathering Facts] *****************************************************************************
+2018-10-27 03:19:26,074 p=935 u=debian |  ok: [127.0.0.1]
+2018-10-27 03:19:26,100 p=935 u=debian |  TASK [stop container and destroy] ******************************************************************
+2018-10-27 03:19:26,517 p=935 u=debian |  ok: [127.0.0.1] => (item={u'vm': u'test1'})
+2018-10-27 03:19:26,665 p=935 u=debian |  ok: [127.0.0.1] => (item={u'vm': u'test2'})
+2018-10-27 03:19:26,889 p=935 u=debian |  failed: [127.0.0.1] (item={u'vm': u'test3'}) => {"changed": false, "command": "/usr/bin/lxc-create --name test3 --quiet --template ubuntu --bdev dir", "err": "", "item": {"vm": "test3"}, "msg": "Failed executing lxc-create.", "rc": 1}
+2018-10-27 03:19:26,898 p=935 u=debian |  	to retry, use: --limit @/home/debian/repos/toolbox/playbook/lxc/lxc-destroy.retry
+
+2018-10-27 03:19:26,902 p=935 u=debian |  PLAY RECAP *****************************************************************************************
+2018-10-27 03:19:26,905 p=935 u=debian |  127.0.0.1                  : ok=1    changed=0    unreachable=0    failed=1   
+2018-10-27 03:37:06,103 p=1777 u=debian |  PLAY [base.local] **********************************************************************************
+2018-10-27 03:37:06,118 p=1777 u=debian |  TASK [Gathering Facts] *****************************************************************************
+2018-10-27 03:37:06,967 p=1777 u=debian |  ok: [127.0.0.1]
+2018-10-27 03:37:06,989 p=1777 u=debian |  TASK [create lxc dir] ******************************************************************************
+2018-10-27 03:37:07,356 p=1777 u=debian |  ok: [127.0.0.1]
+2018-10-27 03:37:07,378 p=1777 u=debian |  TASK [create lxc config file] **********************************************************************
+2018-10-27 03:37:07,732 p=1777 u=debian |  changed: [127.0.0.1]
+2018-10-27 03:37:07,755 p=1777 u=debian |  TASK [add lxc idmap] *******************************************************************************
+2018-10-27 03:37:07,923 p=1777 u=debian |  changed: [127.0.0.1]
+2018-10-27 03:37:07,944 p=1777 u=debian |  TASK [create container] ****************************************************************************
+2018-10-27 03:43:52,286 p=1777 u=debian |  failed: [127.0.0.1] (item={u'vm': u'test1'}) => {"changed": false, "error": "Failed to start container [ test1 ]", "item": {"vm": "test1"}, "lxc_container": {"init_pid": -1, "interfaces": [], "ips": [], "name": "test1", "state": "stopped"}, "msg": "The container [ test1 ] failed to start. Check to lxc is available and that the container is in a functional state.", "rc": 1}
+2018-10-27 03:50:35,947 p=1777 u=debian |  failed: [127.0.0.1] (item={u'vm': u'test2'}) => {"changed": false, "error": "Failed to start container [ test2 ]", "item": {"vm": "test2"}, "lxc_container": {"init_pid": -1, "interfaces": [], "ips": [], "name": "test2", "state": "stopped"}, "msg": "The container [ test2 ] failed to start. Check to lxc is available and that the container is in a functional state.", "rc": 1}
+2018-10-27 03:57:22,360 p=1777 u=debian |  failed: [127.0.0.1] (item={u'vm': u'test3'}) => {"changed": false, "error": "Failed to start container [ test3 ]", "item": {"vm": "test3"}, "lxc_container": {"init_pid": -1, "interfaces": [], "ips": [], "name": "test3", "state": "stopped"}, "msg": "The container [ test3 ] failed to start. Check to lxc is available and that the container is in a functional state.", "rc": 1}
+2018-10-27 03:57:22,368 p=1777 u=debian |  	to retry, use: --limit @/home/debian/repos/toolbox/playbook/lxc/lxc-create.retry
+
+2018-10-27 03:57:22,374 p=1777 u=debian |  PLAY RECAP *****************************************************************************************
+2018-10-27 03:57:22,377 p=1777 u=debian |  127.0.0.1                  : ok=4    changed=2    unreachable=0    failed=1   
+2018-10-31 01:37:41,897 p=616 u=debian |  PLAY [base.local] **********************************************************************************
+2018-10-31 01:37:41,915 p=616 u=debian |  TASK [Gathering Facts] *****************************************************************************
+2018-10-31 01:37:42,789 p=616 u=debian |  ok: [127.0.0.1]
+2018-10-31 01:37:42,816 p=616 u=debian |  TASK [install lxc] *********************************************************************************
+2018-10-31 01:37:45,187 p=616 u=debian |  fatal: [127.0.0.1]: FAILED! => {"changed": false, "module_stderr": "Sorry, try again.\n[sudo via ansible, key=uibhkaonnasswcqvnqdwnjrvzawzncmb] password: \nsudo: 1 incorrect password attempt\n", "module_stdout": "", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error", "rc": 1}
+2018-10-31 01:37:45,194 p=616 u=debian |  	to retry, use: --limit @/home/debian/repos/toolbox/playbook/install_lxc.retry
+
+2018-10-31 01:37:45,197 p=616 u=debian |  PLAY RECAP *****************************************************************************************
+2018-10-31 01:37:45,199 p=616 u=debian |  127.0.0.1                  : ok=1    changed=0    unreachable=0    failed=1   
+2018-10-31 01:39:56,749 p=728 u=debian |  PLAY [base.local] **********************************************************************************
+2018-10-31 01:39:56,764 p=728 u=debian |  TASK [Gathering Facts] *****************************************************************************
+2018-10-31 01:39:57,555 p=728 u=debian |  ok: [127.0.0.1]
+2018-10-31 01:39:57,576 p=728 u=debian |  TASK [install lxc] *********************************************************************************
+2018-10-31 01:40:01,115 p=728 u=debian |  ok: [127.0.0.1]
+2018-10-31 01:40:01,137 p=728 u=debian |  TASK [down bridge] *********************************************************************************
+2018-10-31 01:40:01,509 p=728 u=debian |  changed: [127.0.0.1]
+2018-10-31 01:40:01,531 p=728 u=debian |  TASK [delete bridge] *******************************************************************************
+2018-10-31 01:40:01,722 p=728 u=debian |  changed: [127.0.0.1]
+2018-10-31 01:40:01,745 p=728 u=debian |  TASK [create bridge] *******************************************************************************
+2018-10-31 01:40:01,950 p=728 u=debian |  changed: [127.0.0.1]
+2018-10-31 01:40:01,972 p=728 u=debian |  TASK [setting bridge] ******************************************************************************
+2018-10-31 01:40:02,155 p=728 u=debian |  changed: [127.0.0.1]
+2018-10-31 01:40:02,178 p=728 u=debian |  TASK [Restart service networking] ******************************************************************
+2018-10-31 01:40:03,363 p=728 u=debian |  changed: [127.0.0.1]
+2018-10-31 01:40:03,386 p=728 u=debian |  TASK [wait for SSH] ********************************************************************************
+2018-10-31 01:40:13,454 p=728 u=debian |   [WARNING]: Reset is not implemented for this connection
+
+2018-10-31 01:40:13,737 p=728 u=debian |  ok: [127.0.0.1]
+2018-10-31 01:40:13,759 p=728 u=debian |  TASK [setting lxc-default configuration] ***********************************************************
+2018-10-31 01:40:13,938 p=728 u=debian |  changed: [127.0.0.1]
+2018-10-31 01:40:13,961 p=728 u=debian |  TASK [setting lxc-net configuration] ***************************************************************
+2018-10-31 01:40:14,143 p=728 u=debian |  changed: [127.0.0.1]
+2018-10-31 01:40:14,168 p=728 u=debian |  TASK [lxc.id_map u] ********************************************************************************
+2018-10-31 01:40:14,362 p=728 u=debian |  changed: [127.0.0.1]
+2018-10-31 01:40:14,384 p=728 u=debian |  TASK [lxc.id_map g] ********************************************************************************
+2018-10-31 01:40:14,567 p=728 u=debian |  changed: [127.0.0.1]
+2018-10-31 01:40:14,591 p=728 u=debian |  TASK [setting unprivilege user clone configuration] ************************************************
+2018-10-31 01:40:14,775 p=728 u=debian |  changed: [127.0.0.1]
+2018-10-31 01:40:14,798 p=728 u=debian |  TASK [setting unprivilege user clone configuration] ************************************************
+2018-10-31 01:40:14,986 p=728 u=debian |  changed: [127.0.0.1]
+2018-10-31 01:40:14,993 p=728 u=debian |  PLAY RECAP *****************************************************************************************
+2018-10-31 01:40:14,995 p=728 u=debian |  127.0.0.1                  : ok=14   changed=11   unreachable=0    failed=0   
+2018-10-31 01:40:49,380 p=1682 u=debian |  PLAY [base.local] **********************************************************************************
+2018-10-31 01:40:49,396 p=1682 u=debian |  TASK [Gathering Facts] *****************************************************************************
+2018-10-31 01:40:50,215 p=1682 u=debian |  ok: [127.0.0.1]
+2018-10-31 01:40:50,239 p=1682 u=debian |  TASK [create lxc dir] ******************************************************************************
+2018-10-31 01:40:50,609 p=1682 u=debian |  ok: [127.0.0.1]
+2018-10-31 01:40:50,634 p=1682 u=debian |  TASK [create lxc config file] **********************************************************************
+2018-10-31 01:40:50,994 p=1682 u=debian |  changed: [127.0.0.1]
+2018-10-31 01:40:51,018 p=1682 u=debian |  TASK [add lxc idmap] *******************************************************************************
+2018-10-31 01:40:51,187 p=1682 u=debian |  changed: [127.0.0.1]
+2018-10-31 01:40:51,210 p=1682 u=debian |  TASK [create container] ****************************************************************************
+2018-10-31 01:47:18,745 p=1682 u=debian |   [ERROR]: User interrupted execution
+
+2018-10-31 01:56:49,648 p=4522 u=debian |  PLAY [base.local] **********************************************************************************
+2018-10-31 01:56:49,666 p=4522 u=debian |  TASK [Gathering Facts] *****************************************************************************
+2018-10-31 01:56:50,489 p=4522 u=debian |  ok: [127.0.0.1]
+2018-10-31 01:56:50,511 p=4522 u=debian |  TASK [install lxc] *********************************************************************************
+2018-10-31 01:56:51,549 p=4522 u=debian |  ok: [127.0.0.1]
+2018-10-31 01:56:51,573 p=4522 u=debian |  TASK [down bridge] *********************************************************************************
+2018-10-31 01:56:51,960 p=4522 u=debian |  changed: [127.0.0.1]
+2018-10-31 01:56:51,983 p=4522 u=debian |  TASK [delete bridge] *******************************************************************************
+2018-10-31 01:56:52,176 p=4522 u=debian |  changed: [127.0.0.1]
+2018-10-31 01:56:52,203 p=4522 u=debian |  TASK [create bridge] *******************************************************************************
+2018-10-31 01:56:52,405 p=4522 u=debian |  changed: [127.0.0.1]
+2018-10-31 01:56:52,427 p=4522 u=debian |  TASK [setting bridge] ******************************************************************************
+2018-10-31 01:56:52,620 p=4522 u=debian |  changed: [127.0.0.1]
+2018-10-31 01:56:52,649 p=4522 u=debian |  TASK [Restart service networking] ******************************************************************
+2018-10-31 01:56:53,842 p=4522 u=debian |  changed: [127.0.0.1]
+2018-10-31 01:56:53,863 p=4522 u=debian |  TASK [wait for SSH] ********************************************************************************
+2018-10-31 01:57:03,894 p=4522 u=debian |   [WARNING]: Reset is not implemented for this connection
+
+2018-10-31 01:57:04,208 p=4522 u=debian |  ok: [127.0.0.1]
+2018-10-31 01:57:04,230 p=4522 u=debian |  TASK [setting lxc-default configuration] ***********************************************************
+2018-10-31 01:57:04,413 p=4522 u=debian |  changed: [127.0.0.1]
+2018-10-31 01:57:04,437 p=4522 u=debian |  TASK [setting lxc-net configuration] ***************************************************************
+2018-10-31 01:57:04,621 p=4522 u=debian |  changed: [127.0.0.1]
+2018-10-31 01:57:04,643 p=4522 u=debian |  TASK [lxc.id_map u] ********************************************************************************
+2018-10-31 01:57:04,833 p=4522 u=debian |  changed: [127.0.0.1]
+2018-10-31 01:57:04,856 p=4522 u=debian |  TASK [lxc.id_map g] ********************************************************************************
+2018-10-31 01:57:05,044 p=4522 u=debian |  changed: [127.0.0.1]
+2018-10-31 01:57:05,068 p=4522 u=debian |  TASK [setting unprivilege user clone configuration] ************************************************
+2018-10-31 01:57:05,254 p=4522 u=debian |  changed: [127.0.0.1]
+2018-10-31 01:57:05,279 p=4522 u=debian |  TASK [setting unprivilege user clone configuration] ************************************************
+2018-10-31 01:57:05,463 p=4522 u=debian |  changed: [127.0.0.1]
+2018-10-31 01:57:05,470 p=4522 u=debian |  PLAY RECAP *****************************************************************************************
+2018-10-31 01:57:05,472 p=4522 u=debian |  127.0.0.1                  : ok=14   changed=11   unreachable=0    failed=0   
+2018-10-31 01:57:54,251 p=5304 u=debian |  PLAY [base.local] **********************************************************************************
+2018-10-31 01:57:54,266 p=5304 u=debian |  TASK [Gathering Facts] *****************************************************************************
+2018-10-31 01:57:55,066 p=5304 u=debian |  ok: [127.0.0.1]
+2018-10-31 01:57:55,088 p=5304 u=debian |  TASK [create lxc dir] ******************************************************************************
+2018-10-31 01:57:55,457 p=5304 u=debian |  ok: [127.0.0.1]
+2018-10-31 01:57:55,481 p=5304 u=debian |  TASK [create lxc config file] **********************************************************************
+2018-10-31 01:57:55,841 p=5304 u=debian |  changed: [127.0.0.1]
+2018-10-31 01:57:55,864 p=5304 u=debian |  TASK [add lxc idmap] *******************************************************************************
+2018-10-31 01:57:56,034 p=5304 u=debian |  changed: [127.0.0.1]
+2018-10-31 01:57:56,058 p=5304 u=debian |  TASK [create container] ****************************************************************************
+2018-10-31 02:04:29,442 p=5304 u=debian |  failed: [127.0.0.1] (item={u'vm': u'test1'}) => {"changed": false, "error": "Failed to start container [ test1 ]", "item": {"vm": "test1"}, "lxc_container": {"init_pid": -1, "interfaces": [], "ips": [], "name": "test1", "state": "stopped"}, "msg": "The container [ test1 ] failed to start. Check to lxc is available and that the container is in a functional state.", "rc": 1}
+2018-10-31 02:08:53,354 p=5304 u=debian |   [ERROR]: User interrupted execution
+
+2018-10-31 02:26:40,092 p=10315 u=debian |  ERROR! the playbook: lxc/lxc-destroy. could not be found
+2018-10-31 02:26:43,177 p=10319 u=debian |  PLAY [base.local] **********************************************************************************
+2018-10-31 02:26:43,194 p=10319 u=debian |  TASK [Gathering Facts] *****************************************************************************
+2018-10-31 02:26:44,027 p=10319 u=debian |  ok: [127.0.0.1]
+2018-10-31 02:26:44,054 p=10319 u=debian |  TASK [stop container and destroy] ******************************************************************
+2018-10-31 02:26:44,488 p=10319 u=debian |  ok: [127.0.0.1] => (item={u'vm': u'test1'})
+2018-10-31 02:26:44,642 p=10319 u=debian |  ok: [127.0.0.1] => (item={u'vm': u'test2'})
+2018-10-31 02:26:44,809 p=10319 u=debian |  ok: [127.0.0.1] => (item={u'vm': u'test3'})
+2018-10-31 02:26:44,834 p=10319 u=debian |  TASK [Destroy a container] *************************************************************************
+2018-10-31 02:26:46,338 p=10319 u=debian |  changed: [127.0.0.1] => (item={u'vm': u'test1'})
+2018-10-31 02:26:47,810 p=10319 u=debian |  changed: [127.0.0.1] => (item={u'vm': u'test2'})
+2018-10-31 02:26:49,355 p=10319 u=debian |  changed: [127.0.0.1] => (item={u'vm': u'test3'})
+2018-10-31 02:26:49,363 p=10319 u=debian |  PLAY RECAP *****************************************************************************************
+2018-10-31 02:26:49,365 p=10319 u=debian |  127.0.0.1                  : ok=3    changed=1    unreachable=0    failed=0   
+2018-10-31 03:22:12,716 p=12231 u=debian |  PLAY [base.local] **********************************************************************************
+2018-10-31 03:22:12,732 p=12231 u=debian |  TASK [Gathering Facts] *****************************************************************************
+2018-10-31 03:22:13,530 p=12231 u=debian |  ok: [127.0.0.1]
+2018-10-31 03:22:13,553 p=12231 u=debian |  TASK [create lxc dir] ******************************************************************************
+2018-10-31 03:22:13,925 p=12231 u=debian |  ok: [127.0.0.1]
+2018-10-31 03:22:13,951 p=12231 u=debian |  TASK [create lxc config file] **********************************************************************
+2018-10-31 03:22:14,304 p=12231 u=debian |  changed: [127.0.0.1]
+2018-10-31 03:22:14,328 p=12231 u=debian |  TASK [add lxc idmap] *******************************************************************************
+2018-10-31 03:22:14,497 p=12231 u=debian |  changed: [127.0.0.1]
+2018-10-31 03:22:14,519 p=12231 u=debian |  TASK [create container] ****************************************************************************
+2018-10-31 03:29:01,408 p=12231 u=debian |  failed: [127.0.0.1] (item={u'vm': u'test1'}) => {"changed": false, "error": "Failed to start container [ test1 ]", "item": {"vm": "test1"}, "lxc_container": {"init_pid": -1, "interfaces": [], "ips": [], "name": "test1", "state": "stopped"}, "msg": "The container [ test1 ] failed to start. Check to lxc is available and that the container is in a functional state.", "rc": 1}
+2018-10-31 03:35:48,081 p=12231 u=debian |  failed: [127.0.0.1] (item={u'vm': u'test2'}) => {"changed": false, "error": "Failed to start container [ test2 ]", "item": {"vm": "test2"}, "lxc_container": {"init_pid": -1, "interfaces": [], "ips": [], "name": "test2", "state": "stopped"}, "msg": "The container [ test2 ] failed to start. Check to lxc is available and that the container is in a functional state.", "rc": 1}
+2018-10-31 03:42:34,473 p=12231 u=debian |  failed: [127.0.0.1] (item={u'vm': u'test3'}) => {"changed": false, "error": "Failed to start container [ test3 ]", "item": {"vm": "test3"}, "lxc_container": {"init_pid": -1, "interfaces": [], "ips": [], "name": "test3", "state": "stopped"}, "msg": "The container [ test3 ] failed to start. Check to lxc is available and that the container is in a functional state.", "rc": 1}
+2018-10-31 03:42:34,479 p=12231 u=debian |  	to retry, use: --limit @/home/debian/repos/toolbox/playbook/lxc/lxc-create.retry
+
+2018-10-31 03:42:34,482 p=12231 u=debian |  PLAY RECAP *****************************************************************************************
+2018-10-31 03:42:34,484 p=12231 u=debian |  127.0.0.1                  : ok=4    changed=2    unreachable=0    failed=1   
+2018-11-04 11:34:20,004 p=10789 u=debian |  PLAY [base.local] **********************************************************************************
+2018-11-04 11:34:20,019 p=10789 u=debian |  TASK [Gathering Facts] *****************************************************************************
+2018-11-04 11:34:20,901 p=10789 u=debian |  ok: [127.0.0.1]
+2018-11-04 11:34:20,925 p=10789 u=debian |  TASK [stop container and destroy] ******************************************************************
+2018-11-04 11:34:21,335 p=10789 u=debian |  ok: [127.0.0.1] => (item={u'vm': u'test1'})
+2018-11-04 11:34:21,489 p=10789 u=debian |  ok: [127.0.0.1] => (item={u'vm': u'test2'})
+2018-11-04 11:34:21,653 p=10789 u=debian |  ok: [127.0.0.1] => (item={u'vm': u'test3'})
+2018-11-04 11:34:21,678 p=10789 u=debian |  TASK [Destroy a container] *************************************************************************
+2018-11-04 11:34:23,191 p=10789 u=debian |  changed: [127.0.0.1] => (item={u'vm': u'test1'})
+2018-11-04 11:34:24,659 p=10789 u=debian |  changed: [127.0.0.1] => (item={u'vm': u'test2'})
+2018-11-04 11:34:26,202 p=10789 u=debian |  changed: [127.0.0.1] => (item={u'vm': u'test3'})
+2018-11-04 11:34:26,210 p=10789 u=debian |  PLAY RECAP *****************************************************************************************
+2018-11-04 11:34:26,211 p=10789 u=debian |  127.0.0.1                  : ok=3    changed=1    unreachable=0    failed=0   
+2018-11-04 11:34:36,212 p=11023 u=debian |  PLAY [base.local] **********************************************************************************
+2018-11-04 11:34:36,229 p=11023 u=debian |  TASK [Gathering Facts] *****************************************************************************
+2018-11-04 11:34:37,037 p=11023 u=debian |  ok: [127.0.0.1]
+2018-11-04 11:34:37,061 p=11023 u=debian |  TASK [create lxc dir] ******************************************************************************
+2018-11-04 11:34:37,438 p=11023 u=debian |  ok: [127.0.0.1]
+2018-11-04 11:34:37,462 p=11023 u=debian |  TASK [create lxc config file] **********************************************************************
+2018-11-04 11:34:37,825 p=11023 u=debian |  changed: [127.0.0.1]
+2018-11-04 11:34:37,850 p=11023 u=debian |  TASK [add lxc idmap] *******************************************************************************
+2018-11-04 11:34:38,023 p=11023 u=debian |  changed: [127.0.0.1]
+2018-11-04 11:34:38,045 p=11023 u=debian |  TASK [create container] ****************************************************************************
+2018-11-04 11:37:16,058 p=11023 u=debian |   [ERROR]: User interrupted execution
+
+2018-11-04 11:37:38,374 p=12907 u=debian |  PLAY [base.local] **********************************************************************************
+2018-11-04 11:37:38,390 p=12907 u=debian |  TASK [Gathering Facts] *****************************************************************************
+2018-11-04 11:37:39,215 p=12907 u=debian |  ok: [127.0.0.1]
+2018-11-04 11:37:39,239 p=12907 u=debian |  TASK [create lxc dir] ******************************************************************************
+2018-11-04 11:37:39,615 p=12907 u=debian |  ok: [127.0.0.1]
+2018-11-04 11:37:39,641 p=12907 u=debian |  TASK [create lxc config file] **********************************************************************
+2018-11-04 11:37:39,994 p=12907 u=debian |  changed: [127.0.0.1]
+2018-11-04 11:37:40,020 p=12907 u=debian |  TASK [add lxc idmap] *******************************************************************************
+2018-11-04 11:37:40,196 p=12907 u=debian |  changed: [127.0.0.1]
+2018-11-04 11:37:40,219 p=12907 u=debian |  TASK [create container] ****************************************************************************
+2018-11-04 11:44:18,965 p=12907 u=debian |  failed: [127.0.0.1] (item={u'vm': u'test1'}) => {"changed": false, "error": "Failed to start container [ test1 ]", "item": {"vm": "test1"}, "lxc_container": {"init_pid": -1, "interfaces": [], "ips": [], "name": "test1", "state": "stopped"}, "msg": "The container [ test1 ] failed to start. Check to lxc is available and that the container is in a functional state.", "rc": 1}
+2018-11-04 11:51:05,824 p=12907 u=debian |  failed: [127.0.0.1] (item={u'vm': u'test2'}) => {"changed": false, "error": "Failed to start container [ test2 ]", "item": {"vm": "test2"}, "lxc_container": {"init_pid": -1, "interfaces": [], "ips": [], "name": "test2", "state": "stopped"}, "msg": "The container [ test2 ] failed to start. Check to lxc is available and that the container is in a functional state.", "rc": 1}
+2018-11-04 11:57:52,405 p=12907 u=debian |  failed: [127.0.0.1] (item={u'vm': u'test3'}) => {"changed": false, "error": "Failed to start container [ test3 ]", "item": {"vm": "test3"}, "lxc_container": {"init_pid": -1, "interfaces": [], "ips": [], "name": "test3", "state": "stopped"}, "msg": "The container [ test3 ] failed to start. Check to lxc is available and that the container is in a functional state.", "rc": 1}
+2018-11-04 11:57:52,409 p=12907 u=debian |  	to retry, use: --limit @/home/debian/repos/toolbox/playbook/lxc/lxc-create.retry
+
+2018-11-04 11:57:52,412 p=12907 u=debian |  PLAY RECAP *****************************************************************************************
+2018-11-04 11:57:52,413 p=12907 u=debian |  127.0.0.1                  : ok=4    changed=2    unreachable=0    failed=1   
+2018-11-04 12:05:19,966 p=7694 u=debian |  PLAY [base.local] **********************************************************************************
+2018-11-04 12:05:19,982 p=7694 u=debian |  TASK [Gathering Facts] *****************************************************************************
+2018-11-04 12:05:20,905 p=7694 u=debian |  ok: [127.0.0.1]
+2018-11-04 12:05:20,928 p=7694 u=debian |  TASK [stop container and destroy] ******************************************************************
+2018-11-04 12:05:21,338 p=7694 u=debian |  ok: [127.0.0.1] => (item={u'vm': u'test1'})
+2018-11-04 12:05:21,493 p=7694 u=debian |  ok: [127.0.0.1] => (item={u'vm': u'test2'})
+2018-11-04 12:05:21,657 p=7694 u=debian |  ok: [127.0.0.1] => (item={u'vm': u'test3'})
+2018-11-04 12:05:21,682 p=7694 u=debian |  TASK [Destroy a container] *************************************************************************
+2018-11-04 12:05:23,196 p=7694 u=debian |  changed: [127.0.0.1] => (item={u'vm': u'test1'})
+2018-11-04 12:05:24,711 p=7694 u=debian |  changed: [127.0.0.1] => (item={u'vm': u'test2'})
+2018-11-04 12:05:26,230 p=7694 u=debian |  changed: [127.0.0.1] => (item={u'vm': u'test3'})
+2018-11-04 12:05:26,240 p=7694 u=debian |  PLAY RECAP *****************************************************************************************
+2018-11-04 12:05:26,243 p=7694 u=debian |  127.0.0.1                  : ok=3    changed=1    unreachable=0    failed=0   
+2018-11-04 12:06:05,003 p=8009 u=debian |  PLAY [base.local] **********************************************************************************
+2018-11-04 12:06:05,015 p=8009 u=debian |  TASK [Gathering Facts] *****************************************************************************
+2018-11-04 12:06:05,805 p=8009 u=debian |  ok: [127.0.0.1]
+2018-11-04 12:06:05,829 p=8009 u=debian |  TASK [create lxc dir] ******************************************************************************
+2018-11-04 12:06:06,206 p=8009 u=debian |  ok: [127.0.0.1]
+2018-11-04 12:06:06,229 p=8009 u=debian |  TASK [create lxc config file] **********************************************************************
+2018-11-04 12:06:06,586 p=8009 u=debian |  changed: [127.0.0.1]
+2018-11-04 12:06:06,608 p=8009 u=debian |  TASK [add lxc idmap] *******************************************************************************
+2018-11-04 12:06:06,779 p=8009 u=debian |  changed: [127.0.0.1]
+2018-11-04 12:06:06,801 p=8009 u=debian |  TASK [create container] ****************************************************************************
+2018-11-04 12:12:53,511 p=8009 u=debian |  failed: [127.0.0.1] (item={u'vm': u'test1'}) => {"changed": false, "error": "Failed to start container [ test1 ]", "item": {"vm": "test1"}, "lxc_container": {"init_pid": -1, "interfaces": [], "ips": [], "name": "test1", "state": "stopped"}, "msg": "The container [ test1 ] failed to start. Check to lxc is available and that the container is in a functional state.", "rc": 1}
+2018-11-04 12:12:53,516 p=8009 u=debian |  	to retry, use: --limit @/home/debian/repos/toolbox/playbook/lxc/lxc-create.retry
+
+2018-11-04 12:12:53,518 p=8009 u=debian |  PLAY RECAP *****************************************************************************************
+2018-11-04 12:12:53,519 p=8009 u=debian |  127.0.0.1                  : ok=4    changed=2    unreachable=0    failed=1   
+2018-11-04 12:28:31,312 p=17891 u=debian |  PLAY [base.local] **********************************************************************************
+2018-11-04 12:28:31,325 p=17891 u=debian |  TASK [Gathering Facts] *****************************************************************************
+2018-11-04 12:28:32,123 p=17891 u=debian |  ok: [127.0.0.1]
+2018-11-04 12:28:32,146 p=17891 u=debian |  TASK [create lxc dir] ******************************************************************************
+2018-11-04 12:28:32,521 p=17891 u=debian |  ok: [127.0.0.1]
+2018-11-04 12:28:32,544 p=17891 u=debian |  TASK [create lxc config file] **********************************************************************
+2018-11-04 12:28:32,897 p=17891 u=debian |  changed: [127.0.0.1]
+2018-11-04 12:28:32,921 p=17891 u=debian |  TASK [add lxc idmap] *******************************************************************************
+2018-11-04 12:28:33,091 p=17891 u=debian |  changed: [127.0.0.1]
+2018-11-04 12:28:33,113 p=17891 u=debian |  TASK [create container] ****************************************************************************
+2018-11-04 12:29:36,414 p=17891 u=debian |  changed: [127.0.0.1] => (item={u'vm': u'test1'})
+2018-11-04 12:29:36,437 p=17891 u=debian |  TASK [apt update] **********************************************************************************
+2018-11-04 12:30:37,751 p=17891 u=debian |  changed: [127.0.0.1] => (item={u'vm': u'test1'})
+2018-11-04 12:30:37,775 p=17891 u=debian |  TASK [inatall avahi-daemon ssh] ********************************************************************
+2018-11-04 12:41:18,275 p=17891 u=debian |   [ERROR]: User interrupted execution
+
+2018-11-04 13:54:02,264 p=18817 u=debian |  PLAY [base.local] *******************************************************************************************
+2018-11-04 13:54:02,278 p=18817 u=debian |  TASK [Gathering Facts] **************************************************************************************
+2018-11-04 13:54:03,089 p=18817 u=debian |  ok: [127.0.0.1]
+2018-11-04 13:54:03,111 p=18817 u=debian |  TASK [create lxc dir] ***************************************************************************************
+2018-11-04 13:54:03,485 p=18817 u=debian |  ok: [127.0.0.1]
+2018-11-04 13:54:03,506 p=18817 u=debian |  TASK [create lxc config file] *******************************************************************************
+2018-11-04 13:54:03,862 p=18817 u=debian |  changed: [127.0.0.1]
+2018-11-04 13:54:03,892 p=18817 u=debian |  TASK [add lxc idmap] ****************************************************************************************
+2018-11-04 13:54:04,068 p=18817 u=debian |  changed: [127.0.0.1]
+2018-11-04 13:54:04,090 p=18817 u=debian |  TASK [create container] *************************************************************************************
+2018-11-04 13:54:14,805 p=18817 u=debian |  changed: [127.0.0.1] => (item={u'vm': u'test1'})
+2018-11-04 13:54:14,827 p=18817 u=debian |  TASK [set root password] ************************************************************************************
+2018-11-04 13:54:15,143 p=18817 u=debian |  changed: [127.0.0.1] => (item={u'vm': u'test1'})
+2018-11-04 13:54:15,168 p=18817 u=debian |  TASK [apt update] *******************************************************************************************
+2018-11-04 13:54:52,005 p=18817 u=debian |   [ERROR]: User interrupted execution
+
+2018-11-04 17:40:20,945 p=19816 u=debian |  PLAY [base.local] **********************************************************************************
+2018-11-04 17:40:20,961 p=19816 u=debian |  TASK [Gathering Facts] *****************************************************************************
+2018-11-04 17:40:21,762 p=19816 u=debian |  ok: [127.0.0.1]
+2018-11-04 17:40:21,785 p=19816 u=debian |  TASK [create lxc dir] ******************************************************************************
+2018-11-04 17:40:22,160 p=19816 u=debian |  ok: [127.0.0.1]
+2018-11-04 17:40:22,183 p=19816 u=debian |  TASK [create lxc config file] **********************************************************************
+2018-11-04 17:40:22,538 p=19816 u=debian |  changed: [127.0.0.1]
+2018-11-04 17:40:22,562 p=19816 u=debian |  TASK [add lxc idmap] *******************************************************************************
+2018-11-04 17:40:22,738 p=19816 u=debian |  changed: [127.0.0.1]
+2018-11-04 17:40:22,762 p=19816 u=debian |  TASK [create container] ****************************************************************************
+2018-11-04 17:40:33,336 p=19816 u=debian |  changed: [127.0.0.1] => (item={u'vm': u'test1'})
+2018-11-04 17:40:33,419 p=19816 u=debian |  TASK [set root password] ***************************************************************************
+2018-11-04 17:40:33,681 p=19816 u=debian |  changed: [127.0.0.1] => (item={u'vm': u'test1'})
+2018-11-04 17:40:33,705 p=19816 u=debian |  TASK [apt update] **********************************************************************************
+2018-11-04 17:41:35,029 p=19816 u=debian |  changed: [127.0.0.1] => (item={u'vm': u'test1'})
+2018-11-04 17:41:35,052 p=19816 u=debian |  TASK [inatall ssh] *********************************************************************************
+2018-11-04 18:04:36,649 p=19816 u=debian |  failed: [127.0.0.1] (item={u'vm': u'test1'}) => {"changed": true, "cmd": "lxc-attach -n test1 -- su -c \"apt-get install -y avahi-daemon ssh && systemctl stop avahi-daemon.service\"", "delta": "0:23:01.169948", "end": "2018-11-04 18:04:36.375110", "item": {"vm": "test1"}, "msg": "non-zero return code", "rc": 100, "start": "2018-11-04 17:41:35.205162", "stderr": "E: Failed to fetch http://deb.debian.org/debian/pool/main/libd/libdaemon/libdaemon0_0.14-6_amd64.deb  Temporary failure resolving 'deb.debian.org'\nE: Failed to fetch http://deb.debian.org/debian/pool/main/s/sgml-base/sgml-base_1.29_all.deb  Temporary failure resolving 'deb.debian.org'\nE: Failed to fetch http://security.debian.org/debian-security/pool/updates/main/o/openssh/openssh-sftp-server_7.4p1-10+deb9u4_amd64.deb  Temporary failure resolving 'security.debian.org'\nE: Failed to fetch http://deb.debian.org/debian/pool/main/u/ucf/ucf_3.0036_all.deb  Temporary failure resolving 'deb.debian.org'\nE: Failed to fetch http://deb.debian.org/debian/pool/main/t/tcp-wrappers/libwrap0_7.6.q-26_amd64.deb  Temporary failure resolving 'deb.debian.org'\nE: Failed to fetch http://security.debian.org/debian-security/pool/updates/main/o/openssh/openssh-server_7.4p1-10+deb9u4_amd64.deb  Temporary failure resolving 'security.debian.org'\nE: Failed to fetch http://security.debian.org/debian-security/pool/updates/main/o/openssh/ssh_7.4p1-10+deb9u4_all.deb  Temporary failure resolving 'security.debian.org'\nE: Failed to fetch http://deb.debian.org/debian/pool/main/g/geoip/libgeoip1_1.6.9-4_amd64.deb  Temporary failure resolving 'deb.debian.org'\nE: Failed to fetch http://security.debian.org/debian-security/pool/updates/main/i/icu/libicu57_57.1-6+deb9u2_amd64.deb  Temporary failure resolving 'deb.debian.org'\nE: Failed to fetch http://security.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.9.4+dfsg1-2.2+deb9u2_amd64.deb  Temporary failure resolving 'deb.debian.org'\nE: Failed to fetch http://security.debian.org/debian-security/pool/updates/main/b/bind9/libisc160_9.10.3.dfsg.P4-12.3+deb9u4_amd64.deb  Temporary failure resolving 'deb.debian.org'\nE: Failed to fetch http://security.debian.org/debian-security/pool/updates/main/b/bind9/libdns162_9.10.3.dfsg.P4-12.3+deb9u4_amd64.deb  Temporary failure resolving 'deb.debian.org'\nE: Failed to fetch http://security.debian.org/debian-security/pool/updates/main/b/bind9/libisccc140_9.10.3.dfsg.P4-12.3+deb9u4_amd64.deb  Temporary failure resolving 'deb.debian.org'\nE: Failed to fetch http://security.debian.org/debian-security/pool/updates/main/b/bind9/libisccfg140_9.10.3.dfsg.P4-12.3+deb9u4_amd64.deb  Temporary failure resolving 'deb.debian.org'\nE: Failed to fetch http://security.debian.org/debian-security/pool/updates/main/b/bind9/libbind9-140_9.10.3.dfsg.P4-12.3+deb9u4_amd64.deb  Temporary failure resolving 'deb.debian.org'\nE: Failed to fetch http://security.debian.org/debian-security/pool/updates/main/b/bind9/liblwres141_9.10.3.dfsg.P4-12.3+deb9u4_amd64.deb  Temporary failure resolving 'deb.debian.org'\nE: Failed to fetch http://security.debian.org/debian-security/pool/updates/main/b/bind9/bind9-host_9.10.3.dfsg.P4-12.3+deb9u4_amd64.deb  Temporary failure resolving 'deb.debian.org'\nE: Failed to fetch http://deb.debian.org/debian/pool/main/n/ncurses/ncurses-term_6.0+20161126-1+deb9u2_all.deb  Temporary failure resolving 'deb.debian.org'\nE: Failed to fetch http://deb.debian.org/debian/pool/main/a/avahi/libavahi-common-data_0.6.32-2_amd64.deb  Temporary failure resolving 'deb.debian.org'\nE: Failed to fetch http://deb.debian.org/debian/pool/main/a/avahi/libavahi-common3_0.6.32-2_amd64.deb  Temporary failure resolving 'deb.debian.org'\nE: Failed to fetch http://deb.debian.org/debian/pool/main/a/avahi/libavahi-core7_0.6.32-2_amd64.deb  Temporary failure resolving 'deb.debian.org'\nE: Failed to fetch http://deb.debian.org/debian/pool/main/a/avahi/avahi-daemon_0.6.32-2_amd64.deb  Temporary failure resolving 'deb.debian.org'\nE: Failed to fetch http://deb.debian.org/debian/pool/main/g/geoip-database/geoip-database_20170512-1_all.deb  Temporary failure resolving 'deb.debian.org'\nE: Failed to fetch http://deb.debian.org/debian/pool/main/n/nss-mdns/libnss-mdns_0.10-8_amd64.deb  Temporary failure resolving 'deb.debian.org'\nE: Failed to fetch http://deb.debian.org/debian/pool/main/t/tcp-wrappers/tcpd_7.6.q-26_amd64.deb  Temporary failure resolving 'deb.debian.org'\nE: Failed to fetch http://deb.debian.org/debian/pool/main/x/xml-core/xml-core_0.17_all.deb  Temporary failure resolving 'deb.debian.org'\nE: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?", "stderr_lines": ["E: Failed to fetch http://deb.debian.org/debian/pool/main/libd/libdaemon/libdaemon0_0.14-6_amd64.deb  Temporary failure resolving 'deb.debian.org'", "E: Failed to fetch http://deb.debian.org/debian/pool/main/s/sgml-base/sgml-base_1.29_all.deb  Temporary failure resolving 'deb.debian.org'", "E: Failed to fetch http://security.debian.org/debian-security/pool/updates/main/o/openssh/openssh-sftp-server_7.4p1-10+deb9u4_amd64.deb  Temporary failure resolving 'security.debian.org'", "E: Failed to fetch http://deb.debian.org/debian/pool/main/u/ucf/ucf_3.0036_all.deb  Temporary failure resolving 'deb.debian.org'", "E: Failed to fetch http://deb.debian.org/debian/pool/main/t/tcp-wrappers/libwrap0_7.6.q-26_amd64.deb  Temporary failure resolving 'deb.debian.org'", "E: Failed to fetch http://security.debian.org/debian-security/pool/updates/main/o/openssh/openssh-server_7.4p1-10+deb9u4_amd64.deb  Temporary failure resolving 'security.debian.org'", "E: Failed to fetch http://security.debian.org/debian-security/pool/updates/main/o/openssh/ssh_7.4p1-10+deb9u4_all.deb  Temporary failure resolving 'security.debian.org'", "E: Failed to fetch http://deb.debian.org/debian/pool/main/g/geoip/libgeoip1_1.6.9-4_amd64.deb  Temporary failure resolving 'deb.debian.org'", "E: Failed to fetch http://security.debian.org/debian-security/pool/updates/main/i/icu/libicu57_57.1-6+deb9u2_amd64.deb  Temporary failure resolving 'deb.debian.org'", "E: Failed to fetch http://security.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.9.4+dfsg1-2.2+deb9u2_amd64.deb  Temporary failure resolving 'deb.debian.org'", "E: Failed to fetch http://security.debian.org/debian-security/pool/updates/main/b/bind9/libisc160_9.10.3.dfsg.P4-12.3+deb9u4_amd64.deb  Temporary failure resolving 'deb.debian.org'", "E: Failed to fetch http://security.debian.org/debian-security/pool/updates/main/b/bind9/libdns162_9.10.3.dfsg.P4-12.3+deb9u4_amd64.deb  Temporary failure resolving 'deb.debian.org'", "E: Failed to fetch http://security.debian.org/debian-security/pool/updates/main/b/bind9/libisccc140_9.10.3.dfsg.P4-12.3+deb9u4_amd64.deb  Temporary failure resolving 'deb.debian.org'", "E: Failed to fetch http://security.debian.org/debian-security/pool/updates/main/b/bind9/libisccfg140_9.10.3.dfsg.P4-12.3+deb9u4_amd64.deb  Temporary failure resolving 'deb.debian.org'", "E: Failed to fetch http://security.debian.org/debian-security/pool/updates/main/b/bind9/libbind9-140_9.10.3.dfsg.P4-12.3+deb9u4_amd64.deb  Temporary failure resolving 'deb.debian.org'", "E: Failed to fetch http://security.debian.org/debian-security/pool/updates/main/b/bind9/liblwres141_9.10.3.dfsg.P4-12.3+deb9u4_amd64.deb  Temporary failure resolving 'deb.debian.org'", "E: Failed to fetch http://security.debian.org/debian-security/pool/updates/main/b/bind9/bind9-host_9.10.3.dfsg.P4-12.3+deb9u4_amd64.deb  Temporary failure resolving 'deb.debian.org'", "E: Failed to fetch http://deb.debian.org/debian/pool/main/n/ncurses/ncurses-term_6.0+20161126-1+deb9u2_all.deb  Temporary failure resolving 'deb.debian.org'", "E: Failed to fetch http://deb.debian.org/debian/pool/main/a/avahi/libavahi-common-data_0.6.32-2_amd64.deb  Temporary failure resolving 'deb.debian.org'", "E: Failed to fetch http://deb.debian.org/debian/pool/main/a/avahi/libavahi-common3_0.6.32-2_amd64.deb  Temporary failure resolving 'deb.debian.org'", "E: Failed to fetch http://deb.debian.org/debian/pool/main/a/avahi/libavahi-core7_0.6.32-2_amd64.deb  Temporary failure resolving 'deb.debian.org'", "E: Failed to fetch http://deb.debian.org/debian/pool/main/a/avahi/avahi-daemon_0.6.32-2_amd64.deb  Temporary failure resolving 'deb.debian.org'", "E: Failed to fetch http://deb.debian.org/debian/pool/main/g/geoip-database/geoip-database_20170512-1_all.deb  Temporary failure resolving 'deb.debian.org'", "E: Failed to fetch http://deb.debian.org/debian/pool/main/n/nss-mdns/libnss-mdns_0.10-8_amd64.deb  Temporary failure resolving 'deb.debian.org'", "E: Failed to fetch http://deb.debian.org/debian/pool/main/t/tcp-wrappers/tcpd_7.6.q-26_amd64.deb  Temporary failure resolving 'deb.debian.org'", "E: Failed to fetch http://deb.debian.org/debian/pool/main/x/xml-core/xml-core_0.17_all.deb  Temporary failure resolving 'deb.debian.org'", "E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?"], "stdout": "Reading package lists...\nBuilding dependency tree...\nReading state information...\nThe following additional packages will be installed:\n  bind9-host geoip-database libavahi-common-data libavahi-common3\n  libavahi-core7 libbind9-140 libdaemon0 libdns162 libgeoip1 libicu57\n  libisc160 libisccc140 libisccfg140 liblwres141 libnss-mdns libwrap0 libxml2\n  ncurses-term openssh-server openssh-sftp-server sgml-base tcpd ucf xml-core\nSuggested packages:\n  avahi-autoipd geoip-bin avahi-autoipd | zeroconf molly-guard monkeysphere\n  rssh ssh-askpass ufw sgml-base-doc debhelper\nThe following NEW packages will be installed:\n  avahi-daemon bind9-host geoip-database libavahi-common-data libavahi-common3\n  libavahi-core7 libbind9-140 libdaemon0 libdns162 libgeoip1 libicu57\n  libisc160 libisccc140 libisccfg140 liblwres141 libnss-mdns libwrap0 libxml2\n  ncurses-term openssh-server openssh-sftp-server sgml-base ssh tcpd ucf\n  xml-core\n0 upgraded, 26 newly installed, 0 to remove and 0 not upgraded.\nNeed to get 15.0 MB of archives.\nAfter this operation, 54.7 MB of additional disk space will be used.\nErr:1 http://security.debian.org/debian-security stretch/updates/main amd64 openssh-sftp-server amd64 1:7.4p1-10+deb9u4\n  Temporary failure resolving 'security.debian.org'\nErr:2 http://deb.debian.org/debian stretch/main amd64 libdaemon0 amd64 0.14-6\n  Temporary failure resolving 'deb.debian.org'\nErr:3 http://security.debian.org/debian-security stretch/updates/main amd64 openssh-server amd64 1:7.4p1-10+deb9u4\n  Temporary failure resolving 'security.debian.org'\nErr:4 http://deb.debian.org/debian stretch/main amd64 sgml-base all 1.29\n  Temporary failure resolving 'deb.debian.org'\nErr:5 http://security.debian.org/debian-security stretch/updates/main amd64 ssh all 1:7.4p1-10+deb9u4\n  Temporary failure resolving 'security.debian.org'\nErr:6 http://deb.debian.org/debian stretch/main amd64 ucf all 3.0036\n  Temporary failure resolving 'deb.debian.org'\nErr:7 http://deb.debian.org/debian stretch/main amd64 libwrap0 amd64 7.6.q-26\n  Temporary failure resolving 'deb.debian.org'\nErr:8 http://deb.debian.org/debian stretch/main amd64 libgeoip1 amd64 1.6.9-4\n  Temporary failure resolving 'deb.debian.org'\nErr:9 http://deb.debian.org/debian stretch/main amd64 libicu57 amd64 57.1-6+deb9u2\n  Temporary failure resolving 'deb.debian.org'\nIgn:10 http://deb.debian.org/debian stretch/main amd64 libxml2 amd64 2.9.4+dfsg1-2.2+deb9u2\nErr:9 http://security.debian.org/debian-security stretch/updates/main amd64 libicu57 amd64 57.1-6+deb9u2\n  Temporary failure resolving 'deb.debian.org'\nIgn:11 http://deb.debian.org/debian stretch/main amd64 libisc160 amd64 1:9.10.3.dfsg.P4-12.3+deb9u4\nErr:10 http://security.debian.org/debian-security stretch/updates/main amd64 libxml2 amd64 2.9.4+dfsg1-2.2+deb9u2\n  Temporary failure resolving 'deb.debian.org'\nIgn:12 http://deb.debian.org/debian stretch/main amd64 libdns162 amd64 1:9.10.3.dfsg.P4-12.3+deb9u4\nErr:11 http://security.debian.org/debian-security stretch/updates/main amd64 libisc160 amd64 1:9.10.3.dfsg.P4-12.3+deb9u4\n  Temporary failure resolving 'deb.debian.org'\nIgn:13 http://deb.debian.org/debian stretch/main amd64 libisccc140 amd64 1:9.10.3.dfsg.P4-12.3+deb9u4\nErr:12 http://security.debian.org/debian-security stretch/updates/main amd64 libdns162 amd64 1:9.10.3.dfsg.P4-12.3+deb9u4\n  Temporary failure resolving 'deb.debian.org'\nIgn:14 http://deb.debian.org/debian stretch/main amd64 libisccfg140 amd64 1:9.10.3.dfsg.P4-12.3+deb9u4\nErr:13 http://security.debian.org/debian-security stretch/updates/main amd64 libisccc140 amd64 1:9.10.3.dfsg.P4-12.3+deb9u4\n  Temporary failure resolving 'deb.debian.org'\nIgn:15 http://deb.debian.org/debian stretch/main amd64 libbind9-140 amd64 1:9.10.3.dfsg.P4-12.3+deb9u4\nErr:14 http://security.debian.org/debian-security stretch/updates/main amd64 libisccfg140 amd64 1:9.10.3.dfsg.P4-12.3+deb9u4\n  Temporary failure resolving 'deb.debian.org'\nIgn:16 http://deb.debian.org/debian stretch/main amd64 liblwres141 amd64 1:9.10.3.dfsg.P4-12.3+deb9u4\nErr:15 http://security.debian.org/debian-security stretch/updates/main amd64 libbind9-140 amd64 1:9.10.3.dfsg.P4-12.3+deb9u4\n  Temporary failure resolving 'deb.debian.org'\nIgn:17 http://deb.debian.org/debian stretch/main amd64 bind9-host amd64 1:9.10.3.dfsg.P4-12.3+deb9u4\nErr:16 http://security.debian.org/debian-security stretch/updates/main amd64 liblwres141 amd64 1:9.10.3.dfsg.P4-12.3+deb9u4\n  Temporary failure resolving 'deb.debian.org'\nErr:18 http://deb.debian.org/debian stretch/main amd64 ncurses-term all 6.0+20161126-1+deb9u2\n  Temporary failure resolving 'deb.debian.org'\nErr:17 http://security.debian.org/debian-security stretch/updates/main amd64 bind9-host amd64 1:9.10.3.dfsg.P4-12.3+deb9u4\n  Temporary failure resolving 'deb.debian.org'\nErr:19 http://deb.debian.org/debian stretch/main amd64 libavahi-common-data amd64 0.6.32-2\n  Temporary failure resolving 'deb.debian.org'\nErr:20 http://deb.debian.org/debian stretch/main amd64 libavahi-common3 amd64 0.6.32-2\n  Temporary failure resolving 'deb.debian.org'\nErr:21 http://deb.debian.org/debian stretch/main amd64 libavahi-core7 amd64 0.6.32-2\n  Temporary failure resolving 'deb.debian.org'\nErr:22 http://deb.debian.org/debian stretch/main amd64 avahi-daemon amd64 0.6.32-2\n  Temporary failure resolving 'deb.debian.org'\nErr:23 http://deb.debian.org/debian stretch/main amd64 geoip-database all 20170512-1\n  Temporary failure resolving 'deb.debian.org'\nErr:24 http://deb.debian.org/debian stretch/main amd64 libnss-mdns amd64 0.10-8\n  Temporary failure resolving 'deb.debian.org'\nErr:25 http://deb.debian.org/debian stretch/main amd64 tcpd amd64 7.6.q-26\n  Temporary failure resolving 'deb.debian.org'\nErr:26 http://deb.debian.org/debian stretch/main amd64 xml-core all 0.17\n  Temporary failure resolving 'deb.debian.org'", "stdout_lines": ["Reading package lists...", "Building dependency tree...", "Reading state information...", "The following additional packages will be installed:", "  bind9-host geoip-database libavahi-common-data libavahi-common3", "  libavahi-core7 libbind9-140 libdaemon0 libdns162 libgeoip1 libicu57", "  libisc160 libisccc140 libisccfg140 liblwres141 libnss-mdns libwrap0 libxml2", "  ncurses-term openssh-server openssh-sftp-server sgml-base tcpd ucf xml-core", "Suggested packages:", "  avahi-autoipd geoip-bin avahi-autoipd | zeroconf molly-guard monkeysphere", "  rssh ssh-askpass ufw sgml-base-doc debhelper", "The following NEW packages will be installed:", "  avahi-daemon bind9-host geoip-database libavahi-common-data libavahi-common3", "  libavahi-core7 libbind9-140 libdaemon0 libdns162 libgeoip1 libicu57", "  libisc160 libisccc140 libisccfg140 liblwres141 libnss-mdns libwrap0 libxml2", "  ncurses-term openssh-server openssh-sftp-server sgml-base ssh tcpd ucf", "  xml-core", "0 upgraded, 26 newly installed, 0 to remove and 0 not upgraded.", "Need to get 15.0 MB of archives.", "After this operation, 54.7 MB of additional disk space will be used.", "Err:1 http://security.debian.org/debian-security stretch/updates/main amd64 openssh-sftp-server amd64 1:7.4p1-10+deb9u4", "  Temporary failure resolving 'security.debian.org'", "Err:2 http://deb.debian.org/debian stretch/main amd64 libdaemon0 amd64 0.14-6", "  Temporary failure resolving 'deb.debian.org'", "Err:3 http://security.debian.org/debian-security stretch/updates/main amd64 openssh-server amd64 1:7.4p1-10+deb9u4", "  Temporary failure resolving 'security.debian.org'", "Err:4 http://deb.debian.org/debian stretch/main amd64 sgml-base all 1.29", "  Temporary failure resolving 'deb.debian.org'", "Err:5 http://security.debian.org/debian-security stretch/updates/main amd64 ssh all 1:7.4p1-10+deb9u4", "  Temporary failure resolving 'security.debian.org'", "Err:6 http://deb.debian.org/debian stretch/main amd64 ucf all 3.0036", "  Temporary failure resolving 'deb.debian.org'", "Err:7 http://deb.debian.org/debian stretch/main amd64 libwrap0 amd64 7.6.q-26", "  Temporary failure resolving 'deb.debian.org'", "Err:8 http://deb.debian.org/debian stretch/main amd64 libgeoip1 amd64 1.6.9-4", "  Temporary failure resolving 'deb.debian.org'", "Err:9 http://deb.debian.org/debian stretch/main amd64 libicu57 amd64 57.1-6+deb9u2", "  Temporary failure resolving 'deb.debian.org'", "Ign:10 http://deb.debian.org/debian stretch/main amd64 libxml2 amd64 2.9.4+dfsg1-2.2+deb9u2", "Err:9 http://security.debian.org/debian-security stretch/updates/main amd64 libicu57 amd64 57.1-6+deb9u2", "  Temporary failure resolving 'deb.debian.org'", "Ign:11 http://deb.debian.org/debian stretch/main amd64 libisc160 amd64 1:9.10.3.dfsg.P4-12.3+deb9u4", "Err:10 http://security.debian.org/debian-security stretch/updates/main amd64 libxml2 amd64 2.9.4+dfsg1-2.2+deb9u2", "  Temporary failure resolving 'deb.debian.org'", "Ign:12 http://deb.debian.org/debian stretch/main amd64 libdns162 amd64 1:9.10.3.dfsg.P4-12.3+deb9u4", "Err:11 http://security.debian.org/debian-security stretch/updates/main amd64 libisc160 amd64 1:9.10.3.dfsg.P4-12.3+deb9u4", "  Temporary failure resolving 'deb.debian.org'", "Ign:13 http://deb.debian.org/debian stretch/main amd64 libisccc140 amd64 1:9.10.3.dfsg.P4-12.3+deb9u4", "Err:12 http://security.debian.org/debian-security stretch/updates/main amd64 libdns162 amd64 1:9.10.3.dfsg.P4-12.3+deb9u4", "  Temporary failure resolving 'deb.debian.org'", "Ign:14 http://deb.debian.org/debian stretch/main amd64 libisccfg140 amd64 1:9.10.3.dfsg.P4-12.3+deb9u4", "Err:13 http://security.debian.org/debian-security stretch/updates/main amd64 libisccc140 amd64 1:9.10.3.dfsg.P4-12.3+deb9u4", "  Temporary failure resolving 'deb.debian.org'", "Ign:15 http://deb.debian.org/debian stretch/main amd64 libbind9-140 amd64 1:9.10.3.dfsg.P4-12.3+deb9u4", "Err:14 http://security.debian.org/debian-security stretch/updates/main amd64 libisccfg140 amd64 1:9.10.3.dfsg.P4-12.3+deb9u4", "  Temporary failure resolving 'deb.debian.org'", "Ign:16 http://deb.debian.org/debian stretch/main amd64 liblwres141 amd64 1:9.10.3.dfsg.P4-12.3+deb9u4", "Err:15 http://security.debian.org/debian-security stretch/updates/main amd64 libbind9-140 amd64 1:9.10.3.dfsg.P4-12.3+deb9u4", "  Temporary failure resolving 'deb.debian.org'", "Ign:17 http://deb.debian.org/debian stretch/main amd64 bind9-host amd64 1:9.10.3.dfsg.P4-12.3+deb9u4", "Err:16 http://security.debian.org/debian-security stretch/updates/main amd64 liblwres141 amd64 1:9.10.3.dfsg.P4-12.3+deb9u4", "  Temporary failure resolving 'deb.debian.org'", "Err:18 http://deb.debian.org/debian stretch/main amd64 ncurses-term all 6.0+20161126-1+deb9u2", "  Temporary failure resolving 'deb.debian.org'", "Err:17 http://security.debian.org/debian-security stretch/updates/main amd64 bind9-host amd64 1:9.10.3.dfsg.P4-12.3+deb9u4", "  Temporary failure resolving 'deb.debian.org'", "Err:19 http://deb.debian.org/debian stretch/main amd64 libavahi-common-data amd64 0.6.32-2", "  Temporary failure resolving 'deb.debian.org'", "Err:20 http://deb.debian.org/debian stretch/main amd64 libavahi-common3 amd64 0.6.32-2", "  Temporary failure resolving 'deb.debian.org'", "Err:21 http://deb.debian.org/debian stretch/main amd64 libavahi-core7 amd64 0.6.32-2", "  Temporary failure resolving 'deb.debian.org'", "Err:22 http://deb.debian.org/debian stretch/main amd64 avahi-daemon amd64 0.6.32-2", "  Temporary failure resolving 'deb.debian.org'", "Err:23 http://deb.debian.org/debian stretch/main amd64 geoip-database all 20170512-1", "  Temporary failure resolving 'deb.debian.org'", "Err:24 http://deb.debian.org/debian stretch/main amd64 libnss-mdns amd64 0.10-8", "  Temporary failure resolving 'deb.debian.org'", "Err:25 http://deb.debian.org/debian stretch/main amd64 tcpd amd64 7.6.q-26", "  Temporary failure resolving 'deb.debian.org'", "Err:26 http://deb.debian.org/debian stretch/main amd64 xml-core all 0.17", "  Temporary failure resolving 'deb.debian.org'"]}
+2018-11-04 18:04:36,654 p=19816 u=debian |  	to retry, use: --limit @/home/debian/repos/toolbox/playbook/lxc/lxc-create.retry
+
+2018-11-04 18:04:36,658 p=19816 u=debian |  PLAY RECAP *****************************************************************************************
+2018-11-04 18:04:36,661 p=19816 u=debian |  127.0.0.1                  : ok=7    changed=5    unreachable=0    failed=1   

@@ -1,11 +1,11 @@
 [default]
 [base.local]
-127.0.0.1 ansible_connection=local ansible_sudo_pass=1z2x3c4v
+127.0.0.1 ansible_connection=local ansible_sudo_pass=debian
 #pine64.local ansible_ssh_port=22 ansible_ssh_user=armbian ansible_ssh_pass=1z2x3c4v ansible_sudo_pass=1z2x3c4v
 [client]
-web.local ansible_ssh_port=22 ansible_ssh_user=root ansible_ssh_pass=1z2x3c4v
-mail.local ansible_ssh_port=22 ansible_ssh_user=root ansible_ssh_pass=1z2x3c4v
-test1.local ansible_ssh_port=22 ansible_ssh_user=root ansible_ssh_pass=1z2x3c4v
+web.local ansible_ssh_port=22 ansible_ssh_user=root ansible_ssh_pass=debian
+mail.local ansible_ssh_port=22 ansible_ssh_user=root ansible_ssh_pass=debian
+test1.local ansible_ssh_port=22 ansible_ssh_user=root ansible_ssh_pass=debian
 #[letsproxy]
 #test1.local ansible_ssh_port=22 ansible_ssh_user=root ansible_ssh_pass=1z2x3c4v
 #ansible_sudo_pass=XXXXXXX
