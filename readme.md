@@ -36,6 +36,8 @@ ansible-playbook root.yml
 
 # sudo sh -c 'echo USE_LXC_BRIDGE=\"true\" > /etc/default/lxc-net'
 
+add pkg
+iputils-ping net-tools dnsutils
 
 lxc-checkconfig
 # unprivileged user can clone
